@@ -7,220 +7,242 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4EA94F02195070E2007BB9D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA94F01195070E2007BB9D2 /* Foundation.framework */; };
-		4EA94F04195070E2007BB9D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA94F03195070E2007BB9D2 /* CoreGraphics.framework */; };
-		4EA94F06195070E2007BB9D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA94F05195070E2007BB9D2 /* UIKit.framework */; };
-		4EA94F0C195070E2007BB9D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EA94F0A195070E2007BB9D2 /* InfoPlist.strings */; };
-		4EA94F0E195070E2007BB9D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA94F0D195070E2007BB9D2 /* main.m */; };
-		4EA94F12195070E2007BB9D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA94F11195070E2007BB9D2 /* AppDelegate.m */; };
-		4EA94F14195070E2007BB9D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EA94F13195070E2007BB9D2 /* Images.xcassets */; };
-		4EA94F1B195070E2007BB9D2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA94F1A195070E2007BB9D2 /* XCTest.framework */; };
-		4EA94F1C195070E2007BB9D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA94F01195070E2007BB9D2 /* Foundation.framework */; };
-		4EA94F1D195070E2007BB9D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA94F05195070E2007BB9D2 /* UIKit.framework */; };
-		4EA94F25195070E2007BB9D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EA94F23195070E2007BB9D2 /* InfoPlist.strings */; };
-		4EA94F27195070E2007BB9D2 /* ReactiveDribbbleKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA94F26195070E2007BB9D2 /* ReactiveDribbbleKitDemoTests.m */; };
-		4EADA817195325CF003925CC /* YLDribbbleEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EADA805195325CF003925CC /* YLDribbbleEngine.m */; };
-		4EADA818195325CF003925CC /* YLCommentsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EADA808195325CF003925CC /* YLCommentsListModel.m */; };
-		4EADA819195325CF003925CC /* YLDribbbleComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EADA80A195325CF003925CC /* YLDribbbleComment.m */; };
-		4EADA81A195325CF003925CC /* YLDribbbleList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EADA80C195325CF003925CC /* YLDribbbleList.m */; };
-		4EADA81B195325CF003925CC /* YLDribbbleShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EADA80E195325CF003925CC /* YLDribbbleShot.m */; };
-		4EADA81C195325CF003925CC /* YLDribbbleUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EADA810195325CF003925CC /* YLDribbbleUser.m */; };
-		4EADA81D195325CF003925CC /* YLListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EADA812195325CF003925CC /* YLListModel.m */; };
-		4EADA81E195325CF003925CC /* YLPlayerListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EADA814195325CF003925CC /* YLPlayerListModel.m */; };
-		4EADA81F195325CF003925CC /* YLShotsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EADA816195325CF003925CC /* YLShotsListModel.m */; };
-		4EADA82219532699003925CC /* MTLJSONAdapter+Array.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EADA82119532699003925CC /* MTLJSONAdapter+Array.m */; };
-		903E672055C9422A88DDC5D4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 360332D0F5C14F36BF127A8C /* libPods.a */; };
+		1CA1A442A53F4017849810DC /* libPods-ReactiveDribbbleKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9418EC241254FBBB643B04D /* libPods-ReactiveDribbbleKitDemo.a */; };
+		4E5C71D4195339D7002B1488 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5C71D3195339D7002B1488 /* Foundation.framework */; };
+		4E5C71D6195339D7002B1488 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5C71D5195339D7002B1488 /* CoreGraphics.framework */; };
+		4E5C71D8195339D7002B1488 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5C71D7195339D7002B1488 /* UIKit.framework */; };
+		4E5C71DE195339D7002B1488 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E5C71DC195339D7002B1488 /* InfoPlist.strings */; };
+		4E5C71E0195339D7002B1488 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C71DF195339D7002B1488 /* main.m */; };
+		4E5C71E4195339D7002B1488 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C71E3195339D7002B1488 /* AppDelegate.m */; };
+		4E5C71E6195339D7002B1488 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5C71E5195339D7002B1488 /* Images.xcassets */; };
+		4E5C71ED195339D7002B1488 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5C71EC195339D7002B1488 /* XCTest.framework */; };
+		4E5C71EE195339D7002B1488 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5C71D3195339D7002B1488 /* Foundation.framework */; };
+		4E5C71EF195339D7002B1488 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5C71D7195339D7002B1488 /* UIKit.framework */; };
+		4E5C71F7195339D7002B1488 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E5C71F5195339D7002B1488 /* InfoPlist.strings */; };
+		4E5C71F9195339D7002B1488 /* ReactiveDribbbleKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C71F8195339D7002B1488 /* ReactiveDribbbleKitDemoTests.m */; };
+		4E5C721B19533AFA002B1488 /* YLDribbbleEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C720519533AFA002B1488 /* YLDribbbleEngine.m */; };
+		4E5C721C19533AFA002B1488 /* YLDribbbleEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C720519533AFA002B1488 /* YLDribbbleEngine.m */; };
+		4E5C721D19533AFA002B1488 /* YLReactiveDribbbleEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C720719533AFA002B1488 /* YLReactiveDribbbleEngine.m */; };
+		4E5C721E19533AFA002B1488 /* YLReactiveDribbbleEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C720719533AFA002B1488 /* YLReactiveDribbbleEngine.m */; };
+		4E5C721F19533AFA002B1488 /* MTLJSONAdapter+Array.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C720A19533AFA002B1488 /* MTLJSONAdapter+Array.m */; };
+		4E5C722019533AFA002B1488 /* MTLJSONAdapter+Array.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C720A19533AFA002B1488 /* MTLJSONAdapter+Array.m */; };
+		4E5C722119533AFA002B1488 /* YLCommentsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C720C19533AFA002B1488 /* YLCommentsListModel.m */; };
+		4E5C722219533AFA002B1488 /* YLCommentsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C720C19533AFA002B1488 /* YLCommentsListModel.m */; };
+		4E5C722319533AFA002B1488 /* YLDribbbleComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C720E19533AFA002B1488 /* YLDribbbleComment.m */; };
+		4E5C722419533AFA002B1488 /* YLDribbbleComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C720E19533AFA002B1488 /* YLDribbbleComment.m */; };
+		4E5C722519533AFA002B1488 /* YLDribbbleList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721019533AFA002B1488 /* YLDribbbleList.m */; };
+		4E5C722619533AFA002B1488 /* YLDribbbleList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721019533AFA002B1488 /* YLDribbbleList.m */; };
+		4E5C722719533AFA002B1488 /* YLDribbbleShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721219533AFA002B1488 /* YLDribbbleShot.m */; };
+		4E5C722819533AFA002B1488 /* YLDribbbleShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721219533AFA002B1488 /* YLDribbbleShot.m */; };
+		4E5C722919533AFA002B1488 /* YLDribbbleUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721419533AFA002B1488 /* YLDribbbleUser.m */; };
+		4E5C722A19533AFA002B1488 /* YLDribbbleUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721419533AFA002B1488 /* YLDribbbleUser.m */; };
+		4E5C722B19533AFA002B1488 /* YLListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721619533AFA002B1488 /* YLListModel.m */; };
+		4E5C722C19533AFA002B1488 /* YLListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721619533AFA002B1488 /* YLListModel.m */; };
+		4E5C722D19533AFA002B1488 /* YLPlayerListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721819533AFA002B1488 /* YLPlayerListModel.m */; };
+		4E5C722E19533AFA002B1488 /* YLPlayerListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721819533AFA002B1488 /* YLPlayerListModel.m */; };
+		4E5C722F19533AFA002B1488 /* YLShotsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721A19533AFA002B1488 /* YLShotsListModel.m */; };
+		4E5C723019533AFA002B1488 /* YLShotsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721A19533AFA002B1488 /* YLShotsListModel.m */; };
+		F1570C639161406B8F0CBD4D /* libPods-ReactiveDribbbleKitDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF47BF8C9454E9DB2EE6B7B /* libPods-ReactiveDribbbleKitDemoTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4EA94F1E195070E2007BB9D2 /* PBXContainerItemProxy */ = {
+		4E5C71F0195339D7002B1488 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4EA94EF6195070E2007BB9D2 /* Project object */;
+			containerPortal = 4E5C71C8195339D7002B1488 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4EA94EFD195070E2007BB9D2;
+			remoteGlobalIDString = 4E5C71CF195339D7002B1488;
 			remoteInfo = ReactiveDribbbleKitDemo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		360332D0F5C14F36BF127A8C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EA94EFE195070E2007BB9D2 /* ReactiveDribbbleKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveDribbbleKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EA94F01195070E2007BB9D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4EA94F03195070E2007BB9D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4EA94F05195070E2007BB9D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		4EA94F09195070E2007BB9D2 /* ReactiveDribbbleKitDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReactiveDribbbleKitDemo-Info.plist"; sourceTree = "<group>"; };
-		4EA94F0B195070E2007BB9D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4EA94F0D195070E2007BB9D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4EA94F0F195070E2007BB9D2 /* ReactiveDribbbleKitDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactiveDribbbleKitDemo-Prefix.pch"; sourceTree = "<group>"; };
-		4EA94F10195070E2007BB9D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4EA94F11195070E2007BB9D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4EA94F13195070E2007BB9D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4EA94F19195070E2007BB9D2 /* ReactiveDribbbleKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveDribbbleKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EA94F1A195070E2007BB9D2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		4EA94F22195070E2007BB9D2 /* ReactiveDribbbleKitDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReactiveDribbbleKitDemoTests-Info.plist"; sourceTree = "<group>"; };
-		4EA94F24195070E2007BB9D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4EA94F26195070E2007BB9D2 /* ReactiveDribbbleKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveDribbbleKitDemoTests.m; sourceTree = "<group>"; };
-		4EADA804195325CF003925CC /* YLDribbbleEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDribbbleEngine.h; sourceTree = "<group>"; };
-		4EADA805195325CF003925CC /* YLDribbbleEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDribbbleEngine.m; sourceTree = "<group>"; };
-		4EADA807195325CF003925CC /* YLCommentsListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCommentsListModel.h; sourceTree = "<group>"; };
-		4EADA808195325CF003925CC /* YLCommentsListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCommentsListModel.m; sourceTree = "<group>"; };
-		4EADA809195325CF003925CC /* YLDribbbleComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDribbbleComment.h; sourceTree = "<group>"; };
-		4EADA80A195325CF003925CC /* YLDribbbleComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDribbbleComment.m; sourceTree = "<group>"; };
-		4EADA80B195325CF003925CC /* YLDribbbleList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDribbbleList.h; sourceTree = "<group>"; };
-		4EADA80C195325CF003925CC /* YLDribbbleList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDribbbleList.m; sourceTree = "<group>"; };
-		4EADA80D195325CF003925CC /* YLDribbbleShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDribbbleShot.h; sourceTree = "<group>"; };
-		4EADA80E195325CF003925CC /* YLDribbbleShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDribbbleShot.m; sourceTree = "<group>"; };
-		4EADA80F195325CF003925CC /* YLDribbbleUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDribbbleUser.h; sourceTree = "<group>"; };
-		4EADA810195325CF003925CC /* YLDribbbleUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDribbbleUser.m; sourceTree = "<group>"; };
-		4EADA811195325CF003925CC /* YLListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLListModel.h; sourceTree = "<group>"; };
-		4EADA812195325CF003925CC /* YLListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLListModel.m; sourceTree = "<group>"; };
-		4EADA813195325CF003925CC /* YLPlayerListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPlayerListModel.h; sourceTree = "<group>"; };
-		4EADA814195325CF003925CC /* YLPlayerListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPlayerListModel.m; sourceTree = "<group>"; };
-		4EADA815195325CF003925CC /* YLShotsListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLShotsListModel.h; sourceTree = "<group>"; };
-		4EADA816195325CF003925CC /* YLShotsListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLShotsListModel.m; sourceTree = "<group>"; };
-		4EADA82019532699003925CC /* MTLJSONAdapter+Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTLJSONAdapter+Array.h"; sourceTree = "<group>"; };
-		4EADA82119532699003925CC /* MTLJSONAdapter+Array.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTLJSONAdapter+Array.m"; sourceTree = "<group>"; };
-		83A534F0DC294797B45BD73B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		4E5C71D0195339D7002B1488 /* ReactiveDribbbleKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveDribbbleKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E5C71D3195339D7002B1488 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4E5C71D5195339D7002B1488 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4E5C71D7195339D7002B1488 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4E5C71DB195339D7002B1488 /* ReactiveDribbbleKitDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReactiveDribbbleKitDemo-Info.plist"; sourceTree = "<group>"; };
+		4E5C71DD195339D7002B1488 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4E5C71DF195339D7002B1488 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4E5C71E1195339D7002B1488 /* ReactiveDribbbleKitDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactiveDribbbleKitDemo-Prefix.pch"; sourceTree = "<group>"; };
+		4E5C71E2195339D7002B1488 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4E5C71E3195339D7002B1488 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4E5C71E5195339D7002B1488 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4E5C71EB195339D7002B1488 /* ReactiveDribbbleKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveDribbbleKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E5C71EC195339D7002B1488 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4E5C71F4195339D7002B1488 /* ReactiveDribbbleKitDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReactiveDribbbleKitDemoTests-Info.plist"; sourceTree = "<group>"; };
+		4E5C71F6195339D7002B1488 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4E5C71F8195339D7002B1488 /* ReactiveDribbbleKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveDribbbleKitDemoTests.m; sourceTree = "<group>"; };
+		4E5C720419533AFA002B1488 /* YLDribbbleEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDribbbleEngine.h; sourceTree = "<group>"; };
+		4E5C720519533AFA002B1488 /* YLDribbbleEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDribbbleEngine.m; sourceTree = "<group>"; };
+		4E5C720619533AFA002B1488 /* YLReactiveDribbbleEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLReactiveDribbbleEngine.h; sourceTree = "<group>"; };
+		4E5C720719533AFA002B1488 /* YLReactiveDribbbleEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLReactiveDribbbleEngine.m; sourceTree = "<group>"; };
+		4E5C720919533AFA002B1488 /* MTLJSONAdapter+Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTLJSONAdapter+Array.h"; sourceTree = "<group>"; };
+		4E5C720A19533AFA002B1488 /* MTLJSONAdapter+Array.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTLJSONAdapter+Array.m"; sourceTree = "<group>"; };
+		4E5C720B19533AFA002B1488 /* YLCommentsListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCommentsListModel.h; sourceTree = "<group>"; };
+		4E5C720C19533AFA002B1488 /* YLCommentsListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCommentsListModel.m; sourceTree = "<group>"; };
+		4E5C720D19533AFA002B1488 /* YLDribbbleComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDribbbleComment.h; sourceTree = "<group>"; };
+		4E5C720E19533AFA002B1488 /* YLDribbbleComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDribbbleComment.m; sourceTree = "<group>"; };
+		4E5C720F19533AFA002B1488 /* YLDribbbleList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDribbbleList.h; sourceTree = "<group>"; };
+		4E5C721019533AFA002B1488 /* YLDribbbleList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDribbbleList.m; sourceTree = "<group>"; };
+		4E5C721119533AFA002B1488 /* YLDribbbleShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDribbbleShot.h; sourceTree = "<group>"; };
+		4E5C721219533AFA002B1488 /* YLDribbbleShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDribbbleShot.m; sourceTree = "<group>"; };
+		4E5C721319533AFA002B1488 /* YLDribbbleUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDribbbleUser.h; sourceTree = "<group>"; };
+		4E5C721419533AFA002B1488 /* YLDribbbleUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDribbbleUser.m; sourceTree = "<group>"; };
+		4E5C721519533AFA002B1488 /* YLListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLListModel.h; sourceTree = "<group>"; };
+		4E5C721619533AFA002B1488 /* YLListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLListModel.m; sourceTree = "<group>"; };
+		4E5C721719533AFA002B1488 /* YLPlayerListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPlayerListModel.h; sourceTree = "<group>"; };
+		4E5C721819533AFA002B1488 /* YLPlayerListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPlayerListModel.m; sourceTree = "<group>"; };
+		4E5C721919533AFA002B1488 /* YLShotsListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLShotsListModel.h; sourceTree = "<group>"; };
+		4E5C721A19533AFA002B1488 /* YLShotsListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLShotsListModel.m; sourceTree = "<group>"; };
+		8D8BDDDEB47640F99F5520C8 /* Pods-ReactiveDribbbleKitDemo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDribbbleKitDemo.xcconfig"; path = "Pods/Pods-ReactiveDribbbleKitDemo.xcconfig"; sourceTree = "<group>"; };
+		AEF47BF8C9454E9DB2EE6B7B /* libPods-ReactiveDribbbleKitDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveDribbbleKitDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D931E87D44704B83912DA114 /* Pods-ReactiveDribbbleKitDemoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDribbbleKitDemoTests.xcconfig"; path = "Pods/Pods-ReactiveDribbbleKitDemoTests.xcconfig"; sourceTree = "<group>"; };
+		F9418EC241254FBBB643B04D /* libPods-ReactiveDribbbleKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveDribbbleKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4EA94EFB195070E2007BB9D2 /* Frameworks */ = {
+		4E5C71CD195339D7002B1488 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EA94F04195070E2007BB9D2 /* CoreGraphics.framework in Frameworks */,
-				4EA94F06195070E2007BB9D2 /* UIKit.framework in Frameworks */,
-				4EA94F02195070E2007BB9D2 /* Foundation.framework in Frameworks */,
-				903E672055C9422A88DDC5D4 /* libPods.a in Frameworks */,
+				4E5C71D6195339D7002B1488 /* CoreGraphics.framework in Frameworks */,
+				4E5C71D8195339D7002B1488 /* UIKit.framework in Frameworks */,
+				4E5C71D4195339D7002B1488 /* Foundation.framework in Frameworks */,
+				1CA1A442A53F4017849810DC /* libPods-ReactiveDribbbleKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4EA94F16195070E2007BB9D2 /* Frameworks */ = {
+		4E5C71E8195339D7002B1488 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EA94F1B195070E2007BB9D2 /* XCTest.framework in Frameworks */,
-				4EA94F1D195070E2007BB9D2 /* UIKit.framework in Frameworks */,
-				4EA94F1C195070E2007BB9D2 /* Foundation.framework in Frameworks */,
+				4E5C71ED195339D7002B1488 /* XCTest.framework in Frameworks */,
+				4E5C71EF195339D7002B1488 /* UIKit.framework in Frameworks */,
+				4E5C71EE195339D7002B1488 /* Foundation.framework in Frameworks */,
+				F1570C639161406B8F0CBD4D /* libPods-ReactiveDribbbleKitDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4EA94EF5195070E2007BB9D2 = {
+		4E5C71C7195339D7002B1488 = {
 			isa = PBXGroup;
 			children = (
-				4EADA802195325CF003925CC /* ReactiveDribbbleKit */,
-				4EA94F07195070E2007BB9D2 /* ReactiveDribbbleKitDemo */,
-				4EA94F20195070E2007BB9D2 /* ReactiveDribbbleKitDemoTests */,
-				4EA94F00195070E2007BB9D2 /* Frameworks */,
-				4EA94EFF195070E2007BB9D2 /* Products */,
-				83A534F0DC294797B45BD73B /* Pods.xcconfig */,
+				4E5C720219533AFA002B1488 /* ReactiveDribbbleKit */,
+				4E5C71D9195339D7002B1488 /* ReactiveDribbbleKitDemo */,
+				4E5C71F2195339D7002B1488 /* ReactiveDribbbleKitDemoTests */,
+				4E5C71D2195339D7002B1488 /* Frameworks */,
+				4E5C71D1195339D7002B1488 /* Products */,
+				8D8BDDDEB47640F99F5520C8 /* Pods-ReactiveDribbbleKitDemo.xcconfig */,
+				D931E87D44704B83912DA114 /* Pods-ReactiveDribbbleKitDemoTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
-		4EA94EFF195070E2007BB9D2 /* Products */ = {
+		4E5C71D1195339D7002B1488 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4EA94EFE195070E2007BB9D2 /* ReactiveDribbbleKitDemo.app */,
-				4EA94F19195070E2007BB9D2 /* ReactiveDribbbleKitDemoTests.xctest */,
+				4E5C71D0195339D7002B1488 /* ReactiveDribbbleKitDemo.app */,
+				4E5C71EB195339D7002B1488 /* ReactiveDribbbleKitDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4EA94F00195070E2007BB9D2 /* Frameworks */ = {
+		4E5C71D2195339D7002B1488 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4EA94F01195070E2007BB9D2 /* Foundation.framework */,
-				4EA94F03195070E2007BB9D2 /* CoreGraphics.framework */,
-				4EA94F05195070E2007BB9D2 /* UIKit.framework */,
-				4EA94F1A195070E2007BB9D2 /* XCTest.framework */,
-				360332D0F5C14F36BF127A8C /* libPods.a */,
+				4E5C71D3195339D7002B1488 /* Foundation.framework */,
+				4E5C71D5195339D7002B1488 /* CoreGraphics.framework */,
+				4E5C71D7195339D7002B1488 /* UIKit.framework */,
+				4E5C71EC195339D7002B1488 /* XCTest.framework */,
+				F9418EC241254FBBB643B04D /* libPods-ReactiveDribbbleKitDemo.a */,
+				AEF47BF8C9454E9DB2EE6B7B /* libPods-ReactiveDribbbleKitDemoTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4EA94F07195070E2007BB9D2 /* ReactiveDribbbleKitDemo */ = {
+		4E5C71D9195339D7002B1488 /* ReactiveDribbbleKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				4EA94F10195070E2007BB9D2 /* AppDelegate.h */,
-				4EA94F11195070E2007BB9D2 /* AppDelegate.m */,
-				4EA94F13195070E2007BB9D2 /* Images.xcassets */,
-				4EA94F08195070E2007BB9D2 /* Supporting Files */,
+				4E5C71E2195339D7002B1488 /* AppDelegate.h */,
+				4E5C71E3195339D7002B1488 /* AppDelegate.m */,
+				4E5C71E5195339D7002B1488 /* Images.xcassets */,
+				4E5C71DA195339D7002B1488 /* Supporting Files */,
 			);
 			path = ReactiveDribbbleKitDemo;
 			sourceTree = "<group>";
 		};
-		4EA94F08195070E2007BB9D2 /* Supporting Files */ = {
+		4E5C71DA195339D7002B1488 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4EA94F09195070E2007BB9D2 /* ReactiveDribbbleKitDemo-Info.plist */,
-				4EA94F0A195070E2007BB9D2 /* InfoPlist.strings */,
-				4EA94F0D195070E2007BB9D2 /* main.m */,
-				4EA94F0F195070E2007BB9D2 /* ReactiveDribbbleKitDemo-Prefix.pch */,
+				4E5C71DB195339D7002B1488 /* ReactiveDribbbleKitDemo-Info.plist */,
+				4E5C71DC195339D7002B1488 /* InfoPlist.strings */,
+				4E5C71DF195339D7002B1488 /* main.m */,
+				4E5C71E1195339D7002B1488 /* ReactiveDribbbleKitDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4EA94F20195070E2007BB9D2 /* ReactiveDribbbleKitDemoTests */ = {
+		4E5C71F2195339D7002B1488 /* ReactiveDribbbleKitDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				4EA94F26195070E2007BB9D2 /* ReactiveDribbbleKitDemoTests.m */,
-				4EA94F21195070E2007BB9D2 /* Supporting Files */,
+				4E5C71F8195339D7002B1488 /* ReactiveDribbbleKitDemoTests.m */,
+				4E5C71F3195339D7002B1488 /* Supporting Files */,
 			);
 			path = ReactiveDribbbleKitDemoTests;
 			sourceTree = "<group>";
 		};
-		4EA94F21195070E2007BB9D2 /* Supporting Files */ = {
+		4E5C71F3195339D7002B1488 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4EA94F22195070E2007BB9D2 /* ReactiveDribbbleKitDemoTests-Info.plist */,
-				4EA94F23195070E2007BB9D2 /* InfoPlist.strings */,
+				4E5C71F4195339D7002B1488 /* ReactiveDribbbleKitDemoTests-Info.plist */,
+				4E5C71F5195339D7002B1488 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4EADA802195325CF003925CC /* ReactiveDribbbleKit */ = {
+		4E5C720219533AFA002B1488 /* ReactiveDribbbleKit */ = {
 			isa = PBXGroup;
 			children = (
-				4EADA803195325CF003925CC /* API */,
-				4EADA806195325CF003925CC /* Models */,
+				4E5C720319533AFA002B1488 /* API */,
+				4E5C720819533AFA002B1488 /* Models */,
 			);
 			name = ReactiveDribbbleKit;
 			path = ../ReactiveDribbbleKit;
 			sourceTree = "<group>";
 		};
-		4EADA803195325CF003925CC /* API */ = {
+		4E5C720319533AFA002B1488 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				4EADA804195325CF003925CC /* YLDribbbleEngine.h */,
-				4EADA805195325CF003925CC /* YLDribbbleEngine.m */,
+				4E5C720419533AFA002B1488 /* YLDribbbleEngine.h */,
+				4E5C720519533AFA002B1488 /* YLDribbbleEngine.m */,
+				4E5C720619533AFA002B1488 /* YLReactiveDribbbleEngine.h */,
+				4E5C720719533AFA002B1488 /* YLReactiveDribbbleEngine.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
 		};
-		4EADA806195325CF003925CC /* Models */ = {
+		4E5C720819533AFA002B1488 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4EADA82019532699003925CC /* MTLJSONAdapter+Array.h */,
-				4EADA82119532699003925CC /* MTLJSONAdapter+Array.m */,
-				4EADA807195325CF003925CC /* YLCommentsListModel.h */,
-				4EADA808195325CF003925CC /* YLCommentsListModel.m */,
-				4EADA809195325CF003925CC /* YLDribbbleComment.h */,
-				4EADA80A195325CF003925CC /* YLDribbbleComment.m */,
-				4EADA80B195325CF003925CC /* YLDribbbleList.h */,
-				4EADA80C195325CF003925CC /* YLDribbbleList.m */,
-				4EADA80D195325CF003925CC /* YLDribbbleShot.h */,
-				4EADA80E195325CF003925CC /* YLDribbbleShot.m */,
-				4EADA80F195325CF003925CC /* YLDribbbleUser.h */,
-				4EADA810195325CF003925CC /* YLDribbbleUser.m */,
-				4EADA811195325CF003925CC /* YLListModel.h */,
-				4EADA812195325CF003925CC /* YLListModel.m */,
-				4EADA813195325CF003925CC /* YLPlayerListModel.h */,
-				4EADA814195325CF003925CC /* YLPlayerListModel.m */,
-				4EADA815195325CF003925CC /* YLShotsListModel.h */,
-				4EADA816195325CF003925CC /* YLShotsListModel.m */,
+				4E5C720919533AFA002B1488 /* MTLJSONAdapter+Array.h */,
+				4E5C720A19533AFA002B1488 /* MTLJSONAdapter+Array.m */,
+				4E5C720B19533AFA002B1488 /* YLCommentsListModel.h */,
+				4E5C720C19533AFA002B1488 /* YLCommentsListModel.m */,
+				4E5C720D19533AFA002B1488 /* YLDribbbleComment.h */,
+				4E5C720E19533AFA002B1488 /* YLDribbbleComment.m */,
+				4E5C720F19533AFA002B1488 /* YLDribbbleList.h */,
+				4E5C721019533AFA002B1488 /* YLDribbbleList.m */,
+				4E5C721119533AFA002B1488 /* YLDribbbleShot.h */,
+				4E5C721219533AFA002B1488 /* YLDribbbleShot.m */,
+				4E5C721319533AFA002B1488 /* YLDribbbleUser.h */,
+				4E5C721419533AFA002B1488 /* YLDribbbleUser.m */,
+				4E5C721519533AFA002B1488 /* YLListModel.h */,
+				4E5C721619533AFA002B1488 /* YLListModel.m */,
+				4E5C721719533AFA002B1488 /* YLPlayerListModel.h */,
+				4E5C721819533AFA002B1488 /* YLPlayerListModel.m */,
+				4E5C721919533AFA002B1488 /* YLShotsListModel.h */,
+				4E5C721A19533AFA002B1488 /* YLShotsListModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,15 +250,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4EA94EFD195070E2007BB9D2 /* ReactiveDribbbleKitDemo */ = {
+		4E5C71CF195339D7002B1488 /* ReactiveDribbbleKitDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EA94F2A195070E2007BB9D2 /* Build configuration list for PBXNativeTarget "ReactiveDribbbleKitDemo" */;
+			buildConfigurationList = 4E5C71FC195339D7002B1488 /* Build configuration list for PBXNativeTarget "ReactiveDribbbleKitDemo" */;
 			buildPhases = (
-				BB8C5CD53DEB4670ADBC54FD /* Check Pods Manifest.lock */,
-				4EA94EFA195070E2007BB9D2 /* Sources */,
-				4EA94EFB195070E2007BB9D2 /* Frameworks */,
-				4EA94EFC195070E2007BB9D2 /* Resources */,
-				3DA122BC59384CD6B4BAFA3F /* Copy Pods Resources */,
+				7DE3CEB1DE394BA891E9BD29 /* Check Pods Manifest.lock */,
+				4E5C71CC195339D7002B1488 /* Sources */,
+				4E5C71CD195339D7002B1488 /* Frameworks */,
+				4E5C71CE195339D7002B1488 /* Resources */,
+				C635BB07E45B4A5680146007 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,81 +266,98 @@
 			);
 			name = ReactiveDribbbleKitDemo;
 			productName = ReactiveDribbbleKitDemo;
-			productReference = 4EA94EFE195070E2007BB9D2 /* ReactiveDribbbleKitDemo.app */;
+			productReference = 4E5C71D0195339D7002B1488 /* ReactiveDribbbleKitDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4EA94F18195070E2007BB9D2 /* ReactiveDribbbleKitDemoTests */ = {
+		4E5C71EA195339D7002B1488 /* ReactiveDribbbleKitDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EA94F2D195070E2007BB9D2 /* Build configuration list for PBXNativeTarget "ReactiveDribbbleKitDemoTests" */;
+			buildConfigurationList = 4E5C71FF195339D7002B1488 /* Build configuration list for PBXNativeTarget "ReactiveDribbbleKitDemoTests" */;
 			buildPhases = (
-				4EA94F15195070E2007BB9D2 /* Sources */,
-				4EA94F16195070E2007BB9D2 /* Frameworks */,
-				4EA94F17195070E2007BB9D2 /* Resources */,
+				F9B6A9CA0D5B46E7808B495D /* Check Pods Manifest.lock */,
+				4E5C71E7195339D7002B1488 /* Sources */,
+				4E5C71E8195339D7002B1488 /* Frameworks */,
+				4E5C71E9195339D7002B1488 /* Resources */,
+				DFE991F3E1064099A5F13B5F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4EA94F1F195070E2007BB9D2 /* PBXTargetDependency */,
+				4E5C71F1195339D7002B1488 /* PBXTargetDependency */,
 			);
 			name = ReactiveDribbbleKitDemoTests;
 			productName = ReactiveDribbbleKitDemoTests;
-			productReference = 4EA94F19195070E2007BB9D2 /* ReactiveDribbbleKitDemoTests.xctest */;
+			productReference = 4E5C71EB195339D7002B1488 /* ReactiveDribbbleKitDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4EA94EF6195070E2007BB9D2 /* Project object */ = {
+		4E5C71C8195339D7002B1488 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Yong Li";
 				TargetAttributes = {
-					4EA94F18195070E2007BB9D2 = {
-						TestTargetID = 4EA94EFD195070E2007BB9D2;
+					4E5C71EA195339D7002B1488 = {
+						TestTargetID = 4E5C71CF195339D7002B1488;
 					};
 				};
 			};
-			buildConfigurationList = 4EA94EF9195070E2007BB9D2 /* Build configuration list for PBXProject "ReactiveDribbbleKitDemo" */;
+			buildConfigurationList = 4E5C71CB195339D7002B1488 /* Build configuration list for PBXProject "ReactiveDribbbleKitDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 4EA94EF5195070E2007BB9D2;
-			productRefGroup = 4EA94EFF195070E2007BB9D2 /* Products */;
+			mainGroup = 4E5C71C7195339D7002B1488;
+			productRefGroup = 4E5C71D1195339D7002B1488 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4EA94EFD195070E2007BB9D2 /* ReactiveDribbbleKitDemo */,
-				4EA94F18195070E2007BB9D2 /* ReactiveDribbbleKitDemoTests */,
+				4E5C71CF195339D7002B1488 /* ReactiveDribbbleKitDemo */,
+				4E5C71EA195339D7002B1488 /* ReactiveDribbbleKitDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4EA94EFC195070E2007BB9D2 /* Resources */ = {
+		4E5C71CE195339D7002B1488 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EA94F0C195070E2007BB9D2 /* InfoPlist.strings in Resources */,
-				4EA94F14195070E2007BB9D2 /* Images.xcassets in Resources */,
+				4E5C71DE195339D7002B1488 /* InfoPlist.strings in Resources */,
+				4E5C71E6195339D7002B1488 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4EA94F17195070E2007BB9D2 /* Resources */ = {
+		4E5C71E9195339D7002B1488 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EA94F25195070E2007BB9D2 /* InfoPlist.strings in Resources */,
+				4E5C71F7195339D7002B1488 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3DA122BC59384CD6B4BAFA3F /* Copy Pods Resources */ = {
+		7DE3CEB1DE394BA891E9BD29 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C635BB07E45B4A5680146007 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -330,10 +369,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-ReactiveDribbbleKitDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BB8C5CD53DEB4670ADBC54FD /* Check Pods Manifest.lock */ = {
+		DFE991F3E1064099A5F13B5F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ReactiveDribbbleKitDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9B6A9CA0D5B46E7808B495D /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -351,56 +405,68 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4EA94EFA195070E2007BB9D2 /* Sources */ = {
+		4E5C71CC195339D7002B1488 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EADA81B195325CF003925CC /* YLDribbbleShot.m in Sources */,
-				4EADA818195325CF003925CC /* YLCommentsListModel.m in Sources */,
-				4EA94F12195070E2007BB9D2 /* AppDelegate.m in Sources */,
-				4EADA82219532699003925CC /* MTLJSONAdapter+Array.m in Sources */,
-				4EADA81A195325CF003925CC /* YLDribbbleList.m in Sources */,
-				4EADA819195325CF003925CC /* YLDribbbleComment.m in Sources */,
-				4EADA81E195325CF003925CC /* YLPlayerListModel.m in Sources */,
-				4EADA81C195325CF003925CC /* YLDribbbleUser.m in Sources */,
-				4EADA81D195325CF003925CC /* YLListModel.m in Sources */,
-				4EADA81F195325CF003925CC /* YLShotsListModel.m in Sources */,
-				4EA94F0E195070E2007BB9D2 /* main.m in Sources */,
-				4EADA817195325CF003925CC /* YLDribbbleEngine.m in Sources */,
+				4E5C721F19533AFA002B1488 /* MTLJSONAdapter+Array.m in Sources */,
+				4E5C722919533AFA002B1488 /* YLDribbbleUser.m in Sources */,
+				4E5C722719533AFA002B1488 /* YLDribbbleShot.m in Sources */,
+				4E5C71E4195339D7002B1488 /* AppDelegate.m in Sources */,
+				4E5C722519533AFA002B1488 /* YLDribbbleList.m in Sources */,
+				4E5C722D19533AFA002B1488 /* YLPlayerListModel.m in Sources */,
+				4E5C722B19533AFA002B1488 /* YLListModel.m in Sources */,
+				4E5C722119533AFA002B1488 /* YLCommentsListModel.m in Sources */,
+				4E5C721D19533AFA002B1488 /* YLReactiveDribbbleEngine.m in Sources */,
+				4E5C722F19533AFA002B1488 /* YLShotsListModel.m in Sources */,
+				4E5C722319533AFA002B1488 /* YLDribbbleComment.m in Sources */,
+				4E5C71E0195339D7002B1488 /* main.m in Sources */,
+				4E5C721B19533AFA002B1488 /* YLDribbbleEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4EA94F15195070E2007BB9D2 /* Sources */ = {
+		4E5C71E7195339D7002B1488 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EA94F27195070E2007BB9D2 /* ReactiveDribbbleKitDemoTests.m in Sources */,
+				4E5C723019533AFA002B1488 /* YLShotsListModel.m in Sources */,
+				4E5C722419533AFA002B1488 /* YLDribbbleComment.m in Sources */,
+				4E5C721C19533AFA002B1488 /* YLDribbbleEngine.m in Sources */,
+				4E5C722C19533AFA002B1488 /* YLListModel.m in Sources */,
+				4E5C71F9195339D7002B1488 /* ReactiveDribbbleKitDemoTests.m in Sources */,
+				4E5C722E19533AFA002B1488 /* YLPlayerListModel.m in Sources */,
+				4E5C722619533AFA002B1488 /* YLDribbbleList.m in Sources */,
+				4E5C722819533AFA002B1488 /* YLDribbbleShot.m in Sources */,
+				4E5C722A19533AFA002B1488 /* YLDribbbleUser.m in Sources */,
+				4E5C721E19533AFA002B1488 /* YLReactiveDribbbleEngine.m in Sources */,
+				4E5C722019533AFA002B1488 /* MTLJSONAdapter+Array.m in Sources */,
+				4E5C722219533AFA002B1488 /* YLCommentsListModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4EA94F1F195070E2007BB9D2 /* PBXTargetDependency */ = {
+		4E5C71F1195339D7002B1488 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4EA94EFD195070E2007BB9D2 /* ReactiveDribbbleKitDemo */;
-			targetProxy = 4EA94F1E195070E2007BB9D2 /* PBXContainerItemProxy */;
+			target = 4E5C71CF195339D7002B1488 /* ReactiveDribbbleKitDemo */;
+			targetProxy = 4E5C71F0195339D7002B1488 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4EA94F0A195070E2007BB9D2 /* InfoPlist.strings */ = {
+		4E5C71DC195339D7002B1488 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4EA94F0B195070E2007BB9D2 /* en */,
+				4E5C71DD195339D7002B1488 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		4EA94F23195070E2007BB9D2 /* InfoPlist.strings */ = {
+		4E5C71F5195339D7002B1488 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4EA94F24195070E2007BB9D2 /* en */,
+				4E5C71F6195339D7002B1488 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -408,7 +474,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4EA94F28195070E2007BB9D2 /* Debug */ = {
+		4E5C71FA195339D7002B1488 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -446,7 +512,7 @@
 			};
 			name = Debug;
 		};
-		4EA94F29195070E2007BB9D2 /* Release */ = {
+		4E5C71FB195339D7002B1488 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -478,9 +544,9 @@
 			};
 			name = Release;
 		};
-		4EA94F2B195070E2007BB9D2 /* Debug */ = {
+		4E5C71FD195339D7002B1488 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83A534F0DC294797B45BD73B /* Pods.xcconfig */;
+			baseConfigurationReference = 8D8BDDDEB47640F99F5520C8 /* Pods-ReactiveDribbbleKitDemo.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -492,9 +558,9 @@
 			};
 			name = Debug;
 		};
-		4EA94F2C195070E2007BB9D2 /* Release */ = {
+		4E5C71FE195339D7002B1488 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83A534F0DC294797B45BD73B /* Pods.xcconfig */;
+			baseConfigurationReference = 8D8BDDDEB47640F99F5520C8 /* Pods-ReactiveDribbbleKitDemo.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -506,8 +572,9 @@
 			};
 			name = Release;
 		};
-		4EA94F2E195070E2007BB9D2 /* Debug */ = {
+		4E5C7200195339D7002B1488 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D931E87D44704B83912DA114 /* Pods-ReactiveDribbbleKitDemoTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReactiveDribbbleKitDemo.app/ReactiveDribbbleKitDemo";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -528,8 +595,9 @@
 			};
 			name = Debug;
 		};
-		4EA94F2F195070E2007BB9D2 /* Release */ = {
+		4E5C7201195339D7002B1488 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D931E87D44704B83912DA114 /* Pods-ReactiveDribbbleKitDemoTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReactiveDribbbleKitDemo.app/ReactiveDribbbleKitDemo";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -549,34 +617,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4EA94EF9195070E2007BB9D2 /* Build configuration list for PBXProject "ReactiveDribbbleKitDemo" */ = {
+		4E5C71CB195339D7002B1488 /* Build configuration list for PBXProject "ReactiveDribbbleKitDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4EA94F28195070E2007BB9D2 /* Debug */,
-				4EA94F29195070E2007BB9D2 /* Release */,
+				4E5C71FA195339D7002B1488 /* Debug */,
+				4E5C71FB195339D7002B1488 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EA94F2A195070E2007BB9D2 /* Build configuration list for PBXNativeTarget "ReactiveDribbbleKitDemo" */ = {
+		4E5C71FC195339D7002B1488 /* Build configuration list for PBXNativeTarget "ReactiveDribbbleKitDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4EA94F2B195070E2007BB9D2 /* Debug */,
-				4EA94F2C195070E2007BB9D2 /* Release */,
+				4E5C71FD195339D7002B1488 /* Debug */,
+				4E5C71FE195339D7002B1488 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EA94F2D195070E2007BB9D2 /* Build configuration list for PBXNativeTarget "ReactiveDribbbleKitDemoTests" */ = {
+		4E5C71FF195339D7002B1488 /* Build configuration list for PBXNativeTarget "ReactiveDribbbleKitDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4EA94F2E195070E2007BB9D2 /* Debug */,
-				4EA94F2F195070E2007BB9D2 /* Release */,
+				4E5C7200195339D7002B1488 /* Debug */,
+				4E5C7201195339D7002B1488 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4EA94EF6195070E2007BB9D2 /* Project object */;
+	rootObject = 4E5C71C8195339D7002B1488 /* Project object */;
 }

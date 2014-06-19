@@ -1,7 +1,16 @@
-# Uncomment this line to define a global platform for your project
 platform :ios, "7.0"
 
+target "ReactiveDribbbleKitDemo" do
 pod 'ReactiveCocoa'
+pod 'ReactiveViewModel'
 pod 'AFNetworking'
 pod 'Mantle'
 pod 'SDWebImage'
+end
+
+target "ReactiveDribbbleKitDemoTests" do
+pod 'Specta'
+pod 'Expecta'
+pod 'OCMock'
+end
+
