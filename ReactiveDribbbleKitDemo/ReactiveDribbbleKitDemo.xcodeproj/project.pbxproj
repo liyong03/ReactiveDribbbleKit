@@ -42,6 +42,7 @@
 		4E5C722E19533AFA002B1488 /* YLPlayerListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721819533AFA002B1488 /* YLPlayerListModel.m */; };
 		4E5C722F19533AFA002B1488 /* YLShotsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721A19533AFA002B1488 /* YLShotsListModel.m */; };
 		4E5C723019533AFA002B1488 /* YLShotsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721A19533AFA002B1488 /* YLShotsListModel.m */; };
+		4E5C723219543B10002B1488 /* getPlayer.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E5C723119543B10002B1488 /* getPlayer.json */; };
 		F1570C639161406B8F0CBD4D /* libPods-ReactiveDribbbleKitDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF47BF8C9454E9DB2EE6B7B /* libPods-ReactiveDribbbleKitDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,7 @@
 		4E5C721819533AFA002B1488 /* YLPlayerListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPlayerListModel.m; sourceTree = "<group>"; };
 		4E5C721919533AFA002B1488 /* YLShotsListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLShotsListModel.h; sourceTree = "<group>"; };
 		4E5C721A19533AFA002B1488 /* YLShotsListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLShotsListModel.m; sourceTree = "<group>"; };
+		4E5C723119543B10002B1488 /* getPlayer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getPlayer.json; sourceTree = "<group>"; };
 		8D8BDDDEB47640F99F5520C8 /* Pods-ReactiveDribbbleKitDemo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDribbbleKitDemo.xcconfig"; path = "Pods/Pods-ReactiveDribbbleKitDemo.xcconfig"; sourceTree = "<group>"; };
 		AEF47BF8C9454E9DB2EE6B7B /* libPods-ReactiveDribbbleKitDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveDribbbleKitDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D931E87D44704B83912DA114 /* Pods-ReactiveDribbbleKitDemoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDribbbleKitDemoTests.xcconfig"; path = "Pods/Pods-ReactiveDribbbleKitDemoTests.xcconfig"; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			children = (
 				4E5C71F8195339D7002B1488 /* ReactiveDribbbleKitDemoTests.m */,
 				4E5C71F3195339D7002B1488 /* Supporting Files */,
+				4E5C723119543B10002B1488 /* getPlayer.json */,
 			);
 			path = ReactiveDribbbleKitDemoTests;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E5C71F7195339D7002B1488 /* InfoPlist.strings in Resources */,
+				4E5C723219543B10002B1488 /* getPlayer.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
