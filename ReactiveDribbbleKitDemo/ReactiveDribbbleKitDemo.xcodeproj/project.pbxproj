@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1CA1A442A53F4017849810DC /* libPods-ReactiveDribbbleKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9418EC241254FBBB643B04D /* libPods-ReactiveDribbbleKitDemo.a */; };
+		4E04782B19571EA500D99F99 /* YLPlayersViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04782A19571EA500D99F99 /* YLPlayersViewModel.m */; };
+		4E04782C19571EA500D99F99 /* YLPlayersViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04782A19571EA500D99F99 /* YLPlayersViewModel.m */; };
 		4E5C71D4195339D7002B1488 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5C71D3195339D7002B1488 /* Foundation.framework */; };
 		4E5C71D6195339D7002B1488 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5C71D5195339D7002B1488 /* CoreGraphics.framework */; };
 		4E5C71D8195339D7002B1488 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5C71D7195339D7002B1488 /* UIKit.framework */; };
@@ -57,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E04782919571EA500D99F99 /* YLPlayersViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPlayersViewModel.h; sourceTree = "<group>"; };
+		4E04782A19571EA500D99F99 /* YLPlayersViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPlayersViewModel.m; sourceTree = "<group>"; };
 		4E5C71D0195339D7002B1488 /* ReactiveDribbbleKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveDribbbleKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E5C71D3195339D7002B1488 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4E5C71D5195339D7002B1488 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,6 +132,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E047808195714A700D99F99 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				4E04782919571EA500D99F99 /* YLPlayersViewModel.h */,
+				4E04782A19571EA500D99F99 /* YLPlayersViewModel.m */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
 		4E5C71C7195339D7002B1488 = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +222,7 @@
 			children = (
 				4E5C720319533AFA002B1488 /* API */,
 				4E5C720819533AFA002B1488 /* Models */,
+				4E047808195714A700D99F99 /* MVVM */,
 			);
 			name = ReactiveDribbbleKit;
 			path = ../ReactiveDribbbleKit;
@@ -425,6 +439,7 @@
 				4E5C722F19533AFA002B1488 /* YLShotsListModel.m in Sources */,
 				4E5C722319533AFA002B1488 /* YLDribbbleComment.m in Sources */,
 				4E5C71E0195339D7002B1488 /* main.m in Sources */,
+				4E04782B19571EA500D99F99 /* YLPlayersViewModel.m in Sources */,
 				4E5C721B19533AFA002B1488 /* YLDribbbleEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E04782C19571EA500D99F99 /* YLPlayersViewModel.m in Sources */,
 				4E5C723019533AFA002B1488 /* YLShotsListModel.m in Sources */,
 				4E5C722419533AFA002B1488 /* YLDribbbleComment.m in Sources */,
 				4E5C721C19533AFA002B1488 /* YLDribbbleEngine.m in Sources */,
