@@ -15,6 +15,7 @@
 @property (nonatomic, copy, readonly) NSArray *players;
 @property (nonatomic, strong, readonly) RACCommand *reloadCommand;
 @property (nonatomic, strong, readonly) RACCommand *loadMoreCommand;
+@property (nonatomic, readonly, getter = isLoading) BOOL loading;
 
 + (YLPlayersViewModel*)playerFollowingViewModelWithName:(NSString*)name;
 + (YLPlayersViewModel*)playerFollowerViewModelWithName:(NSString*)name;

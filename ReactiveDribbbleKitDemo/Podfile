@@ -6,6 +6,7 @@ pod 'ReactiveViewModel'
 pod 'AFNetworking'
 pod 'Mantle'
 pod 'SDWebImage'
+pod 'SVProgressHUD'
 end
 
 target "ReactiveDribbbleKitDemoTests" do

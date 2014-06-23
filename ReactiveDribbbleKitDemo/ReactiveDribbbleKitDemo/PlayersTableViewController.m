@@ -11,6 +11,7 @@
 #import <ReactiveCocoa/RACEXTScope.h>
 #import <ReactiveCocoa.h>
 #import "YLDribbbleUser.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 
 @interface PlayersTableViewController ()
 
@@ -34,6 +35,8 @@
 {
     [super viewDidLoad];
     [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"cell"];
+    [SVProgressHUD appearance].hudBackgroundColor = [UIColor blackColor];
+    [SVProgressHUD appearance].hudForegroundColor = [UIColor whiteColor];
     
     self.title = @"Player list";
     
@@ -41,6 +44,14 @@
     [RACObserve(self.viewModel, players) subscribeNext:^(id x) {
         @strongify(self);
         [self.tableView reloadData];
+    }];
+    
+    [RACObserve(self.viewModel, loading) subscribeNext:^(NSNumber *loading){
+        if (loading.boolValue) {
+            [SVProgressHUD show];
+        } else {
+            [SVProgressHUD dismiss];
+        }
     }];
     
     [self.viewModel.reloadCommand execute:nil];
@@ -78,6 +89,14 @@
     cell.textLabel.text = user.realName;
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath*)indexPath {
+    NSLog(@"showed %ld", (long)indexPath.row);
+    NSLog(@"last %lu", self.viewModel.players.count - 1);
+    if (indexPath.row == self.viewModel.players.count - 1) {
+        [self.viewModel.loadMoreCommand execute:nil];
+    }
 }
 
 /*

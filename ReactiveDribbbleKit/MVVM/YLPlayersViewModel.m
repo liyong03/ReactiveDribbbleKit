@@ -13,6 +13,8 @@
 
 @interface YLPlayersViewModel()
 
+@property (nonatomic, assign, getter = isLoading) BOOL loading;
+
 @property (nonatomic, copy, readwrite) NSArray *players;
 @property (nonatomic, assign) NSUInteger page;
 @property (nonatomic, assign) BOOL paginationFinished;
@@ -54,12 +56,15 @@
         
         _reloadCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
             
+            @strongify(self);
             RACSignal *loadPage = [fetchBlock(name, self.page)
                                    doNext:^(YLDribbbleUserList* userList) {
                                        @strongify(self);
                                        self.page++;
-                                       if (userList.pages == userList.pages) {
+                                       if (userList.page == userList.pages) {
                                            self.paginationFinished = YES;
+                                       } else {
+                                           self.paginationFinished = NO;
                                        }
                                    }];
             
@@ -73,12 +78,16 @@
         
         RACSignal *enabled = [RACObserve(self, paginationFinished) not];
         _loadMoreCommand = [[RACCommand alloc] initWithEnabled:enabled signalBlock:^(id _) {
+            
+            @strongify(self);
             return [fetchBlock(name, self.page)
                     doNext:^(YLDribbbleUserList* userList) {
                         @strongify(self);
                         self.page++;
-                        if (userList.pages == userList.pages) {
+                        if (userList.page == userList.pages) {
                             self.paginationFinished = YES;
+                        } else {
+                            self.paginationFinished = NO;
                         }
                     }];;
         }];
@@ -92,6 +101,11 @@
             @strongify(self);
             return [self.players arrayByAddingObjectsFromArray:userList.players];
         }];
+        
+        RAC(self, loading) = [RACSignal combineLatest:@[_reloadCommand.executing, _loadMoreCommand.executing]
+                                               reduce:^id(NSNumber* reloadBool, NSNumber* loadmoreBool){
+                                                   return @(reloadBool.boolValue || loadmoreBool.boolValue);
+                                               }];
     }
     return self;
 }
