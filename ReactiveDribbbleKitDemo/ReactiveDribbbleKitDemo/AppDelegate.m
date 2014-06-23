@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PlayersTableViewController.h"
 
 @implementation AppDelegate
 
@@ -14,6 +15,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    PlayersTableViewController* playersVC = [[PlayersTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController* navi = [[UINavigationController alloc] initWithRootViewController:playersVC];
+    self.window.rootViewController = navi;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

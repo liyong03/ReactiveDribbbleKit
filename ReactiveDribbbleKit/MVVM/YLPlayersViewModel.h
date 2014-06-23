@@ -16,4 +16,8 @@
 @property (nonatomic, strong, readonly) RACCommand *reloadCommand;
 @property (nonatomic, strong, readonly) RACCommand *loadMoreCommand;
 
++ (YLPlayersViewModel*)playerFollowingViewModelWithName:(NSString*)name;
++ (YLPlayersViewModel*)playerFollowerViewModelWithName:(NSString*)name;
++ (YLPlayersViewModel*)playerDrafteeViewModelWithName:(NSString*)name;
+
 @end

@@ -21,7 +21,28 @@
 
 @implementation YLPlayersViewModel
 
-- (instancetype)initWithUsername:(NSString*)name
++ (YLPlayersViewModel*)playerFollowingViewModelWithName:(NSString*)name {
+    return [[YLPlayersViewModel alloc] initWithUsername:name
+                                        andGetListBlock:^RACSignal *(NSString *name, NSUInteger page) {
+                                            return [YLReactiveDribbbleEngine getPlayerFollowingWithUsername:name page:page];
+                                        }];
+}
+
++ (YLPlayersViewModel*)playerFollowerViewModelWithName:(NSString*)name {
+    return [[YLPlayersViewModel alloc] initWithUsername:name
+                                        andGetListBlock:^RACSignal *(NSString *name, NSUInteger page) {
+                                            return [YLReactiveDribbbleEngine getPlayerFollowerWithUsername:name page:page];
+                                        }];
+}
+
++ (YLPlayersViewModel*)playerDrafteeViewModelWithName:(NSString*)name {
+    return [[YLPlayersViewModel alloc] initWithUsername:name
+                                        andGetListBlock:^RACSignal *(NSString *name, NSUInteger page) {
+                                            return [YLReactiveDribbbleEngine getPlayerDrafteeWithUsername:name page:page];
+                                        }];
+}
+
+- (instancetype)initWithUsername:(NSString*)name andGetListBlock:(RACSignal * (^)(NSString* name, NSUInteger page))fetchBlock
 {
     self = [super init];
     if (self) {
@@ -33,7 +54,7 @@
         
         _reloadCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
             
-            RACSignal *loadPage = [[YLReactiveDribbbleEngine getPlayerFollowingWithUsername:name page:self.page]
+            RACSignal *loadPage = [fetchBlock(name, self.page)
                                    doNext:^(YLDribbbleUserList* userList) {
                                        @strongify(self);
                                        self.page++;
@@ -52,7 +73,7 @@
         
         RACSignal *enabled = [RACObserve(self, paginationFinished) not];
         _loadMoreCommand = [[RACCommand alloc] initWithEnabled:enabled signalBlock:^(id _) {
-            return [[YLReactiveDribbbleEngine getPlayerFollowingWithUsername:name page:self.page]
+            return [fetchBlock(name, self.page)
                     doNext:^(YLDribbbleUserList* userList) {
                         @strongify(self);
                         self.page++;
