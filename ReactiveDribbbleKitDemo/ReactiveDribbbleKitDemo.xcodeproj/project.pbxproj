@@ -47,6 +47,8 @@
 		4E5C722F19533AFA002B1488 /* YLShotsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721A19533AFA002B1488 /* YLShotsListModel.m */; };
 		4E5C723019533AFA002B1488 /* YLShotsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721A19533AFA002B1488 /* YLShotsListModel.m */; };
 		4E5C723219543B10002B1488 /* getPlayer.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E5C723119543B10002B1488 /* getPlayer.json */; };
+		4EA6828A195C720000A0A70B /* YLShotsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA68289195C720000A0A70B /* YLShotsViewModel.m */; };
+		4EA6828B195C720000A0A70B /* YLShotsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA68289195C720000A0A70B /* YLShotsViewModel.m */; };
 		F1570C639161406B8F0CBD4D /* libPods-ReactiveDribbbleKitDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF47BF8C9454E9DB2EE6B7B /* libPods-ReactiveDribbbleKitDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +106,8 @@
 		4E5C721919533AFA002B1488 /* YLShotsListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLShotsListModel.h; sourceTree = "<group>"; };
 		4E5C721A19533AFA002B1488 /* YLShotsListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLShotsListModel.m; sourceTree = "<group>"; };
 		4E5C723119543B10002B1488 /* getPlayer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getPlayer.json; sourceTree = "<group>"; };
+		4EA68288195C720000A0A70B /* YLShotsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLShotsViewModel.h; sourceTree = "<group>"; };
+		4EA68289195C720000A0A70B /* YLShotsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLShotsViewModel.m; sourceTree = "<group>"; };
 		8D8BDDDEB47640F99F5520C8 /* Pods-ReactiveDribbbleKitDemo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDribbbleKitDemo.xcconfig"; path = "Pods/Pods-ReactiveDribbbleKitDemo.xcconfig"; sourceTree = "<group>"; };
 		AEF47BF8C9454E9DB2EE6B7B /* libPods-ReactiveDribbbleKitDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveDribbbleKitDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D931E87D44704B83912DA114 /* Pods-ReactiveDribbbleKitDemoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDribbbleKitDemoTests.xcconfig"; path = "Pods/Pods-ReactiveDribbbleKitDemoTests.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +145,8 @@
 			children = (
 				4E04782919571EA500D99F99 /* YLPlayersViewModel.h */,
 				4E04782A19571EA500D99F99 /* YLPlayersViewModel.m */,
+				4EA68288195C720000A0A70B /* YLShotsViewModel.h */,
+				4EA68289195C720000A0A70B /* YLShotsViewModel.m */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -456,6 +462,7 @@
 				4E5C71E0195339D7002B1488 /* main.m in Sources */,
 				4E04782B19571EA500D99F99 /* YLPlayersViewModel.m in Sources */,
 				4E5C721B19533AFA002B1488 /* YLDribbbleEngine.m in Sources */,
+				4EA6828A195C720000A0A70B /* YLShotsViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +473,7 @@
 				4E04782C19571EA500D99F99 /* YLPlayersViewModel.m in Sources */,
 				4E5C723019533AFA002B1488 /* YLShotsListModel.m in Sources */,
 				4E5C722419533AFA002B1488 /* YLDribbbleComment.m in Sources */,
+				4EA6828B195C720000A0A70B /* YLShotsViewModel.m in Sources */,
 				4E5C721C19533AFA002B1488 /* YLDribbbleEngine.m in Sources */,
 				4E5C722C19533AFA002B1488 /* YLListModel.m in Sources */,
 				4E5C71F9195339D7002B1488 /* ReactiveDribbbleKitDemoTests.m in Sources */,
