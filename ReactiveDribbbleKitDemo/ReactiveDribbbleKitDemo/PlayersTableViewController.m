@@ -12,6 +12,7 @@
 #import <ReactiveCocoa.h>
 #import "YLDribbbleUser.h"
 #import <SVProgressHUD/SVProgressHUD.h>
+#import "ShotsViewController.h"
 
 @interface PlayersTableViewController ()
 
@@ -34,7 +35,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"cell"];
+    //[self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"cell"];
     [SVProgressHUD appearance].hudBackgroundColor = [UIColor blackColor];
     [SVProgressHUD appearance].hudForegroundColor = [UIColor whiteColor];
     
@@ -52,6 +53,17 @@
         } else {
             [SVProgressHUD dismiss];
         }
+    }];
+    
+    // actions
+    [[self rac_signalForSelector:@selector(tableView:didSelectRowAtIndexPath:) fromProtocol:@protocol(UITableViewDelegate)] subscribeNext:^(RACTuple *arguments) {
+        @strongify(self);
+        
+        NSIndexPath *indexPath = arguments.second;
+        YLDribbbleUser* player = self.viewModel.players[indexPath.row];
+        
+        ShotsViewController* controller = [ShotsViewController playerShotsViewControllerOfPlayer:player];
+        [self.navigationController pushViewController:controller animated:YES];
     }];
     
     [self.viewModel.reloadCommand execute:nil];
@@ -79,15 +91,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
     }
     
     YLDribbbleUser* user = (YLDribbbleUser*)self.viewModel.players[indexPath.row];
     cell.textLabel.text = user.realName;
-    
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%d",user.shotsCount];
     return cell;
 }
 
@@ -99,53 +111,8 @@
     }
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

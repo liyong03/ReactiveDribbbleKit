@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "PlayersTableViewController.h"
+#import <SDWebImage/SDWebImageManager.h>
 
 @implementation AppDelegate
 
@@ -15,6 +16,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    [SDWebImageManager sharedManager].imageDownloader.maxConcurrentDownloads = 10;
     
     PlayersTableViewController* playersVC = [[PlayersTableViewController alloc] initWithStyle:UITableViewStylePlain];
     UINavigationController* navi = [[UINavigationController alloc] initWithRootViewController:playersVC];

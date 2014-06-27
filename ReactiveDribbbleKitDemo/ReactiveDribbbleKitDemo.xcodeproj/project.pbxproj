@@ -49,6 +49,10 @@
 		4E5C723219543B10002B1488 /* getPlayer.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E5C723119543B10002B1488 /* getPlayer.json */; };
 		4EA6828A195C720000A0A70B /* YLShotsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA68289195C720000A0A70B /* YLShotsViewModel.m */; };
 		4EA6828B195C720000A0A70B /* YLShotsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA68289195C720000A0A70B /* YLShotsViewModel.m */; };
+		4EDB925C195D4708007E66E3 /* ShotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB925B195D4708007E66E3 /* ShotsViewController.m */; };
+		4EDB925D195D4708007E66E3 /* ShotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB925B195D4708007E66E3 /* ShotsViewController.m */; };
+		4EDB9262195D4E18007E66E3 /* ShotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB9261195D4E18007E66E3 /* ShotCell.m */; };
+		4EDB9263195D4E18007E66E3 /* ShotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB9261195D4E18007E66E3 /* ShotCell.m */; };
 		F1570C639161406B8F0CBD4D /* libPods-ReactiveDribbbleKitDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF47BF8C9454E9DB2EE6B7B /* libPods-ReactiveDribbbleKitDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +112,10 @@
 		4E5C723119543B10002B1488 /* getPlayer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getPlayer.json; sourceTree = "<group>"; };
 		4EA68288195C720000A0A70B /* YLShotsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLShotsViewModel.h; sourceTree = "<group>"; };
 		4EA68289195C720000A0A70B /* YLShotsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLShotsViewModel.m; sourceTree = "<group>"; };
+		4EDB925A195D4708007E66E3 /* ShotsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShotsViewController.h; sourceTree = "<group>"; };
+		4EDB925B195D4708007E66E3 /* ShotsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShotsViewController.m; sourceTree = "<group>"; };
+		4EDB9260195D4E18007E66E3 /* ShotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShotCell.h; sourceTree = "<group>"; };
+		4EDB9261195D4E18007E66E3 /* ShotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShotCell.m; sourceTree = "<group>"; };
 		8D8BDDDEB47640F99F5520C8 /* Pods-ReactiveDribbbleKitDemo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDribbbleKitDemo.xcconfig"; path = "Pods/Pods-ReactiveDribbbleKitDemo.xcconfig"; sourceTree = "<group>"; };
 		AEF47BF8C9454E9DB2EE6B7B /* libPods-ReactiveDribbbleKitDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveDribbbleKitDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D931E87D44704B83912DA114 /* Pods-ReactiveDribbbleKitDemoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDribbbleKitDemoTests.xcconfig"; path = "Pods/Pods-ReactiveDribbbleKitDemoTests.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +164,8 @@
 			children = (
 				4E04782E19581FF100D99F99 /* PlayersTableViewController.h */,
 				4E04782F19581FF100D99F99 /* PlayersTableViewController.m */,
+				4EDB925A195D4708007E66E3 /* ShotsViewController.h */,
+				4EDB925B195D4708007E66E3 /* ShotsViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -198,6 +208,7 @@
 		4E5C71D9195339D7002B1488 /* ReactiveDribbbleKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4EDB925E195D4DF8007E66E3 /* ViewsAndCells */,
 				4E04782D195813A900D99F99 /* ViewControllers */,
 				4E5C71E2195339D7002B1488 /* AppDelegate.h */,
 				4E5C71E3195339D7002B1488 /* AppDelegate.m */,
@@ -282,6 +293,15 @@
 				4E5C721A19533AFA002B1488 /* YLShotsListModel.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4EDB925E195D4DF8007E66E3 /* ViewsAndCells */ = {
+			isa = PBXGroup;
+			children = (
+				4EDB9260195D4E18007E66E3 /* ShotCell.h */,
+				4EDB9261195D4E18007E66E3 /* ShotCell.m */,
+			);
+			name = ViewsAndCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,6 +472,7 @@
 				4E5C722719533AFA002B1488 /* YLDribbbleShot.m in Sources */,
 				4E04783019581FF100D99F99 /* PlayersTableViewController.m in Sources */,
 				4E5C71E4195339D7002B1488 /* AppDelegate.m in Sources */,
+				4EDB9262195D4E18007E66E3 /* ShotCell.m in Sources */,
 				4E5C722519533AFA002B1488 /* YLDribbbleList.m in Sources */,
 				4E5C722D19533AFA002B1488 /* YLPlayerListModel.m in Sources */,
 				4E5C722B19533AFA002B1488 /* YLListModel.m in Sources */,
@@ -462,6 +483,7 @@
 				4E5C71E0195339D7002B1488 /* main.m in Sources */,
 				4E04782B19571EA500D99F99 /* YLPlayersViewModel.m in Sources */,
 				4E5C721B19533AFA002B1488 /* YLDribbbleEngine.m in Sources */,
+				4EDB925C195D4708007E66E3 /* ShotsViewController.m in Sources */,
 				4EA6828A195C720000A0A70B /* YLShotsViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EDB925D195D4708007E66E3 /* ShotsViewController.m in Sources */,
 				4E04782C19571EA500D99F99 /* YLPlayersViewModel.m in Sources */,
 				4E5C723019533AFA002B1488 /* YLShotsListModel.m in Sources */,
 				4E5C722419533AFA002B1488 /* YLDribbbleComment.m in Sources */,
@@ -478,6 +501,7 @@
 				4E5C722C19533AFA002B1488 /* YLListModel.m in Sources */,
 				4E5C71F9195339D7002B1488 /* ReactiveDribbbleKitDemoTests.m in Sources */,
 				4E5C722E19533AFA002B1488 /* YLPlayerListModel.m in Sources */,
+				4EDB9263195D4E18007E66E3 /* ShotCell.m in Sources */,
 				4E5C722619533AFA002B1488 /* YLDribbbleList.m in Sources */,
 				4E04783119581FF100D99F99 /* PlayersTableViewController.m in Sources */,
 				4E5C722819533AFA002B1488 /* YLDribbbleShot.m in Sources */,
