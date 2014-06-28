@@ -47,6 +47,10 @@
 		4E5C722F19533AFA002B1488 /* YLShotsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721A19533AFA002B1488 /* YLShotsListModel.m */; };
 		4E5C723019533AFA002B1488 /* YLShotsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C721A19533AFA002B1488 /* YLShotsListModel.m */; };
 		4E5C723219543B10002B1488 /* getPlayer.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E5C723119543B10002B1488 /* getPlayer.json */; };
+		4E90B2EC195EBCD700E59077 /* YLCommentsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E90B2EB195EBCD700E59077 /* YLCommentsViewModel.m */; };
+		4E90B2ED195EBCD700E59077 /* YLCommentsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E90B2EB195EBCD700E59077 /* YLCommentsViewModel.m */; };
+		4E90B2F0195F13A400E59077 /* CommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E90B2EF195F13A400E59077 /* CommentsViewController.m */; };
+		4E90B2F1195F13A400E59077 /* CommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E90B2EF195F13A400E59077 /* CommentsViewController.m */; };
 		4EA6828A195C720000A0A70B /* YLShotsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA68289195C720000A0A70B /* YLShotsViewModel.m */; };
 		4EA6828B195C720000A0A70B /* YLShotsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA68289195C720000A0A70B /* YLShotsViewModel.m */; };
 		4EDB925C195D4708007E66E3 /* ShotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB925B195D4708007E66E3 /* ShotsViewController.m */; };
@@ -110,6 +114,10 @@
 		4E5C721919533AFA002B1488 /* YLShotsListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLShotsListModel.h; sourceTree = "<group>"; };
 		4E5C721A19533AFA002B1488 /* YLShotsListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLShotsListModel.m; sourceTree = "<group>"; };
 		4E5C723119543B10002B1488 /* getPlayer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getPlayer.json; sourceTree = "<group>"; };
+		4E90B2EA195EBCD700E59077 /* YLCommentsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCommentsViewModel.h; sourceTree = "<group>"; };
+		4E90B2EB195EBCD700E59077 /* YLCommentsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCommentsViewModel.m; sourceTree = "<group>"; };
+		4E90B2EE195F13A400E59077 /* CommentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsViewController.h; sourceTree = "<group>"; };
+		4E90B2EF195F13A400E59077 /* CommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsViewController.m; sourceTree = "<group>"; };
 		4EA68288195C720000A0A70B /* YLShotsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLShotsViewModel.h; sourceTree = "<group>"; };
 		4EA68289195C720000A0A70B /* YLShotsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLShotsViewModel.m; sourceTree = "<group>"; };
 		4EDB925A195D4708007E66E3 /* ShotsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShotsViewController.h; sourceTree = "<group>"; };
@@ -155,6 +163,8 @@
 				4E04782A19571EA500D99F99 /* YLPlayersViewModel.m */,
 				4EA68288195C720000A0A70B /* YLShotsViewModel.h */,
 				4EA68289195C720000A0A70B /* YLShotsViewModel.m */,
+				4E90B2EA195EBCD700E59077 /* YLCommentsViewModel.h */,
+				4E90B2EB195EBCD700E59077 /* YLCommentsViewModel.m */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -166,6 +176,8 @@
 				4E04782F19581FF100D99F99 /* PlayersTableViewController.m */,
 				4EDB925A195D4708007E66E3 /* ShotsViewController.h */,
 				4EDB925B195D4708007E66E3 /* ShotsViewController.m */,
+				4E90B2EE195F13A400E59077 /* CommentsViewController.h */,
+				4E90B2EF195F13A400E59077 /* CommentsViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -470,10 +482,12 @@
 				4E5C721F19533AFA002B1488 /* MTLJSONAdapter+Array.m in Sources */,
 				4E5C722919533AFA002B1488 /* YLDribbbleUser.m in Sources */,
 				4E5C722719533AFA002B1488 /* YLDribbbleShot.m in Sources */,
+				4E90B2EC195EBCD700E59077 /* YLCommentsViewModel.m in Sources */,
 				4E04783019581FF100D99F99 /* PlayersTableViewController.m in Sources */,
 				4E5C71E4195339D7002B1488 /* AppDelegate.m in Sources */,
 				4EDB9262195D4E18007E66E3 /* ShotCell.m in Sources */,
 				4E5C722519533AFA002B1488 /* YLDribbbleList.m in Sources */,
+				4E90B2F0195F13A400E59077 /* CommentsViewController.m in Sources */,
 				4E5C722D19533AFA002B1488 /* YLPlayerListModel.m in Sources */,
 				4E5C722B19533AFA002B1488 /* YLListModel.m in Sources */,
 				4E5C722119533AFA002B1488 /* YLCommentsListModel.m in Sources */,
@@ -495,6 +509,7 @@
 				4EDB925D195D4708007E66E3 /* ShotsViewController.m in Sources */,
 				4E04782C19571EA500D99F99 /* YLPlayersViewModel.m in Sources */,
 				4E5C723019533AFA002B1488 /* YLShotsListModel.m in Sources */,
+				4E90B2F1195F13A400E59077 /* CommentsViewController.m in Sources */,
 				4E5C722419533AFA002B1488 /* YLDribbbleComment.m in Sources */,
 				4EA6828B195C720000A0A70B /* YLShotsViewModel.m in Sources */,
 				4E5C721C19533AFA002B1488 /* YLDribbbleEngine.m in Sources */,
@@ -507,6 +522,7 @@
 				4E5C722819533AFA002B1488 /* YLDribbbleShot.m in Sources */,
 				4E5C722A19533AFA002B1488 /* YLDribbbleUser.m in Sources */,
 				4E5C721E19533AFA002B1488 /* YLReactiveDribbbleEngine.m in Sources */,
+				4E90B2ED195EBCD700E59077 /* YLCommentsViewModel.m in Sources */,
 				4E5C722019533AFA002B1488 /* MTLJSONAdapter+Array.m in Sources */,
 				4E5C722219533AFA002B1488 /* YLCommentsListModel.m in Sources */,
 			);

@@ -9,6 +9,7 @@
 #import "ShotsViewController.h"
 #import "YLShotsViewModel.h"
 #import "ShotCell.h"
+#import "CommentsViewController.h"
 #import <SVProgressHUD.h>
 #import <ReactiveCocoa/RACEXTScope.h>
 
@@ -78,6 +79,16 @@
         }
     }];
     
+    [[self rac_signalForSelector:@selector(collectionView:didSelectItemAtIndexPath:) fromProtocol:@protocol(UICollectionViewDelegate)] subscribeNext:^(RACTuple *arguments) {
+        
+        @strongify(self);
+        
+        NSIndexPath* indexPath = arguments.second;
+        YLDribbbleShot* shot = self.viewModel.shots[indexPath.row];
+        CommentsViewController* controller = [CommentsViewController commentsViewControllerOfShot:shot];
+        [self.navigationController pushViewController:controller animated:YES];
+    }];
+    
     [self.viewModel.reloadCommand execute:nil];
 }
 
@@ -99,6 +110,10 @@
     cell.shot = self.viewModel.shots[indexPath.row];
     
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
 }
 
 @end
