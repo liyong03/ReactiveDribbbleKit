@@ -99,6 +99,7 @@
     
     YLDribbbleUser* user = (YLDribbbleUser*)self.viewModel.players[indexPath.row];
     cell.textLabel.text = user.realName;
+    RAC(cell.textLabel, text) = [RACObserve(user, realName) takeUntil:cell.rac_prepareForReuseSignal];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%d",user.shotsCount];
     return cell;
 }
