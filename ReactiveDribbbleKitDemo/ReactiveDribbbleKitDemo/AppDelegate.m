@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "PlayersTableViewController.h"
+#import "ShotsViewController.h"
 #import <SDWebImage/SDWebImageManager.h>
 
 @implementation AppDelegate
@@ -20,8 +21,15 @@
     
     PlayersTableViewController* playersVC = [[PlayersTableViewController alloc] initWithStyle:UITableViewStylePlain];
     UINavigationController* navi = [[UINavigationController alloc] initWithRootViewController:playersVC];
-    self.window.rootViewController = navi;
     
+    ShotsViewController* popularShotsVC = [ShotsViewController popularShotsViewController];
+    UINavigationController* navi2 = [[UINavigationController alloc] initWithRootViewController:popularShotsVC];
+    
+    UITabBarController* tabbar = [[UITabBarController alloc] init];
+    [tabbar addChildViewController:navi];
+    [tabbar addChildViewController:navi2];
+    
+    self.window.rootViewController = tabbar;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

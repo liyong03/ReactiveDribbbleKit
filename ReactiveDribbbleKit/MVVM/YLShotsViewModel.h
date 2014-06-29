@@ -22,4 +22,6 @@
 + (YLShotsViewModel*)playerShotsViewModelOfPlayer:(YLDribbbleUser*)player;
 + (YLShotsViewModel*)playerLikeShotsViewModelOfPlayer:(YLDribbbleUser*)player;
 
++ (YLShotsViewModel*)popularShotsViewModel;
+
 @end

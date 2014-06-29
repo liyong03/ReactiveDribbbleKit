@@ -12,5 +12,6 @@
 @interface ShotsViewController : UICollectionViewController
 
 + (ShotsViewController*)playerShotsViewControllerOfPlayer:(YLDribbbleUser*)player;
++ (ShotsViewController*)popularShotsViewController;
 
 @end

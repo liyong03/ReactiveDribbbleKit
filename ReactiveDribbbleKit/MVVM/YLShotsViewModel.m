@@ -45,6 +45,12 @@
                                     }];
 }
 
++ (YLShotsViewModel*)popularShotsViewModel {
+    return [[YLShotsViewModel alloc] initWithPlayer:nil
+                                    andGetListBlock:^RACSignal *(NSString *name, NSUInteger page) {
+                                        return [YLReactiveDribbbleEngine getPopularShotsWithPage:page];
+                                    }];
+}
 
 - (instancetype)initWithPlayer:(YLDribbbleUser*)player andGetListBlock:(RACSignal * (^)(NSString* name, NSUInteger page))fetchBlock
 {

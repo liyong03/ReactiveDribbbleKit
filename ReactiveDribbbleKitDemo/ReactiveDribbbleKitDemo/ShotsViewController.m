@@ -37,8 +37,32 @@
     self = [super initWithCollectionViewLayout:layout];
     if (self) {
         // Custom initialization
+        self.title = @"Player Shots";
         _player = user;
         _viewModel = [YLShotsViewModel playerShotsViewModelOfPlayer:_player];
+    }
+    return self;
+}
+
+
++ (ShotsViewController*)popularShotsViewController {
+    return [[ShotsViewController alloc] initPopularController];
+}
+
+- (id)initPopularController
+{
+    UICollectionViewFlowLayout* layout = [[UICollectionViewFlowLayout alloc] init];
+    layout.itemSize = CGSizeMake(145, 100);
+    layout.minimumInteritemSpacing = 10;
+    layout.minimumLineSpacing = 10;
+    layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+    
+    self = [super initWithCollectionViewLayout:layout];
+    if (self) {
+        // Custom initialization
+        self.title = @"Popular Shots";
+        _player = nil;
+        _viewModel = [YLShotsViewModel popularShotsViewModel];
     }
     return self;
 }
@@ -52,7 +76,6 @@
     [SVProgressHUD appearance].hudBackgroundColor = [UIColor blackColor];
     [SVProgressHUD appearance].hudForegroundColor = [UIColor whiteColor];
     
-    self.title = @"Player Shots";
     
     @weakify(self);
     [RACObserve(self.viewModel, shots) subscribeNext:^(id x) {
