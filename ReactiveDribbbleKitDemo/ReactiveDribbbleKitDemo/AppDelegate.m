@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "PlayersTableViewController.h"
 #import "ShotsViewController.h"
+#import "LoginViewController.h"
 #import <SDWebImage/SDWebImageManager.h>
 
 @implementation AppDelegate
@@ -19,19 +20,29 @@
     // Override point for customization after application launch.
     [SDWebImageManager sharedManager].imageDownloader.maxConcurrentDownloads = 10;
     
-    PlayersTableViewController* playersVC = [[PlayersTableViewController alloc] initWithStyle:UITableViewStylePlain];
-    UINavigationController* navi = [[UINavigationController alloc] initWithRootViewController:playersVC];
     
-    ShotsViewController* popularShotsVC = [ShotsViewController popularShotsViewController];
-    UINavigationController* navi2 = [[UINavigationController alloc] initWithRootViewController:popularShotsVC];
+    LoginViewController* login = [LoginViewController showLoginViewWithFinishHandler:^{
+        
+        PlayersTableViewController* playersVC = [[PlayersTableViewController alloc] initWithStyle:UITableViewStylePlain];
+        UINavigationController* navi = [[UINavigationController alloc] initWithRootViewController:playersVC];
+        
+        ShotsViewController* popularShotsVC = [ShotsViewController popularShotsViewController];
+        UINavigationController* navi2 = [[UINavigationController alloc] initWithRootViewController:popularShotsVC];
+        
+        UITabBarController* tabbar = [[UITabBarController alloc] init];
+        [tabbar addChildViewController:navi];
+        [tabbar addChildViewController:navi2];
+        
+        self.window.rootViewController = tabbar;
+    }];
     
-    UITabBarController* tabbar = [[UITabBarController alloc] init];
-    [tabbar addChildViewController:navi];
-    [tabbar addChildViewController:navi2];
+    if (login) {
+        self.window.rootViewController = login;
+    }
     
-    self.window.rootViewController = tabbar;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

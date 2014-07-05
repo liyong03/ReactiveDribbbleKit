@@ -10,7 +10,7 @@
 #import <ReactiveViewModel.h>
 #import <ReactiveCocoa.h>
 
-@interface YLCommentsViewModel : NSObject
+@interface YLCommentsViewModel : RVMViewModel
 
 
 @property (nonatomic, copy, readonly) NSArray *comments;

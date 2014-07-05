@@ -57,6 +57,12 @@
 		4EDB925D195D4708007E66E3 /* ShotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB925B195D4708007E66E3 /* ShotsViewController.m */; };
 		4EDB9262195D4E18007E66E3 /* ShotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB9261195D4E18007E66E3 /* ShotCell.m */; };
 		4EDB9263195D4E18007E66E3 /* ShotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB9261195D4E18007E66E3 /* ShotCell.m */; };
+		4EFE61BC1967B61900022C83 /* YLAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE61BB1967B61900022C83 /* YLAccountManager.m */; };
+		4EFE61BD1967B61900022C83 /* YLAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE61BB1967B61900022C83 /* YLAccountManager.m */; };
+		4EFE61C01967BD3100022C83 /* YLDribbbleLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE61BF1967BD3100022C83 /* YLDribbbleLoginViewModel.m */; };
+		4EFE61C11967BD3100022C83 /* YLDribbbleLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE61BF1967BD3100022C83 /* YLDribbbleLoginViewModel.m */; };
+		4EFE61C41967C31E00022C83 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE61C31967C31E00022C83 /* LoginViewController.m */; };
+		4EFE61C51967C31E00022C83 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE61C31967C31E00022C83 /* LoginViewController.m */; };
 		F1570C639161406B8F0CBD4D /* libPods-ReactiveDribbbleKitDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF47BF8C9454E9DB2EE6B7B /* libPods-ReactiveDribbbleKitDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +130,12 @@
 		4EDB925B195D4708007E66E3 /* ShotsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShotsViewController.m; sourceTree = "<group>"; };
 		4EDB9260195D4E18007E66E3 /* ShotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShotCell.h; sourceTree = "<group>"; };
 		4EDB9261195D4E18007E66E3 /* ShotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShotCell.m; sourceTree = "<group>"; };
+		4EFE61BA1967B61900022C83 /* YLAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAccountManager.h; sourceTree = "<group>"; };
+		4EFE61BB1967B61900022C83 /* YLAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAccountManager.m; sourceTree = "<group>"; };
+		4EFE61BE1967BD3100022C83 /* YLDribbbleLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDribbbleLoginViewModel.h; sourceTree = "<group>"; };
+		4EFE61BF1967BD3100022C83 /* YLDribbbleLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDribbbleLoginViewModel.m; sourceTree = "<group>"; };
+		4EFE61C21967C31E00022C83 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		4EFE61C31967C31E00022C83 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		8D8BDDDEB47640F99F5520C8 /* Pods-ReactiveDribbbleKitDemo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDribbbleKitDemo.xcconfig"; path = "Pods/Pods-ReactiveDribbbleKitDemo.xcconfig"; sourceTree = "<group>"; };
 		AEF47BF8C9454E9DB2EE6B7B /* libPods-ReactiveDribbbleKitDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveDribbbleKitDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D931E87D44704B83912DA114 /* Pods-ReactiveDribbbleKitDemoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDribbbleKitDemoTests.xcconfig"; path = "Pods/Pods-ReactiveDribbbleKitDemoTests.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +177,8 @@
 				4EA68289195C720000A0A70B /* YLShotsViewModel.m */,
 				4E90B2EA195EBCD700E59077 /* YLCommentsViewModel.h */,
 				4E90B2EB195EBCD700E59077 /* YLCommentsViewModel.m */,
+				4EFE61BE1967BD3100022C83 /* YLDribbbleLoginViewModel.h */,
+				4EFE61BF1967BD3100022C83 /* YLDribbbleLoginViewModel.m */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -178,6 +192,8 @@
 				4EDB925B195D4708007E66E3 /* ShotsViewController.m */,
 				4E90B2EE195F13A400E59077 /* CommentsViewController.h */,
 				4E90B2EF195F13A400E59077 /* CommentsViewController.m */,
+				4EFE61C21967C31E00022C83 /* LoginViewController.h */,
+				4EFE61C31967C31E00022C83 /* LoginViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -224,6 +240,8 @@
 				4E04782D195813A900D99F99 /* ViewControllers */,
 				4E5C71E2195339D7002B1488 /* AppDelegate.h */,
 				4E5C71E3195339D7002B1488 /* AppDelegate.m */,
+				4EFE61BA1967B61900022C83 /* YLAccountManager.h */,
+				4EFE61BB1967B61900022C83 /* YLAccountManager.m */,
 				4E5C71E5195339D7002B1488 /* Images.xcassets */,
 				4E5C71DA195339D7002B1488 /* Supporting Files */,
 			);
@@ -480,12 +498,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E5C721F19533AFA002B1488 /* MTLJSONAdapter+Array.m in Sources */,
+				4EFE61C41967C31E00022C83 /* LoginViewController.m in Sources */,
 				4E5C722919533AFA002B1488 /* YLDribbbleUser.m in Sources */,
 				4E5C722719533AFA002B1488 /* YLDribbbleShot.m in Sources */,
 				4E90B2EC195EBCD700E59077 /* YLCommentsViewModel.m in Sources */,
 				4E04783019581FF100D99F99 /* PlayersTableViewController.m in Sources */,
 				4E5C71E4195339D7002B1488 /* AppDelegate.m in Sources */,
 				4EDB9262195D4E18007E66E3 /* ShotCell.m in Sources */,
+				4EFE61C01967BD3100022C83 /* YLDribbbleLoginViewModel.m in Sources */,
 				4E5C722519533AFA002B1488 /* YLDribbbleList.m in Sources */,
 				4E90B2F0195F13A400E59077 /* CommentsViewController.m in Sources */,
 				4E5C722D19533AFA002B1488 /* YLPlayerListModel.m in Sources */,
@@ -497,6 +517,7 @@
 				4E5C71E0195339D7002B1488 /* main.m in Sources */,
 				4E04782B19571EA500D99F99 /* YLPlayersViewModel.m in Sources */,
 				4E5C721B19533AFA002B1488 /* YLDribbbleEngine.m in Sources */,
+				4EFE61BC1967B61900022C83 /* YLAccountManager.m in Sources */,
 				4EDB925C195D4708007E66E3 /* ShotsViewController.m in Sources */,
 				4EA6828A195C720000A0A70B /* YLShotsViewModel.m in Sources */,
 			);
@@ -508,10 +529,12 @@
 			files = (
 				4EDB925D195D4708007E66E3 /* ShotsViewController.m in Sources */,
 				4E04782C19571EA500D99F99 /* YLPlayersViewModel.m in Sources */,
+				4EFE61C11967BD3100022C83 /* YLDribbbleLoginViewModel.m in Sources */,
 				4E5C723019533AFA002B1488 /* YLShotsListModel.m in Sources */,
 				4E90B2F1195F13A400E59077 /* CommentsViewController.m in Sources */,
 				4E5C722419533AFA002B1488 /* YLDribbbleComment.m in Sources */,
 				4EA6828B195C720000A0A70B /* YLShotsViewModel.m in Sources */,
+				4EFE61BD1967B61900022C83 /* YLAccountManager.m in Sources */,
 				4E5C721C19533AFA002B1488 /* YLDribbbleEngine.m in Sources */,
 				4E5C722C19533AFA002B1488 /* YLListModel.m in Sources */,
 				4E5C71F9195339D7002B1488 /* ReactiveDribbbleKitDemoTests.m in Sources */,
@@ -524,6 +547,7 @@
 				4E5C721E19533AFA002B1488 /* YLReactiveDribbbleEngine.m in Sources */,
 				4E90B2ED195EBCD700E59077 /* YLCommentsViewModel.m in Sources */,
 				4E5C722019533AFA002B1488 /* MTLJSONAdapter+Array.m in Sources */,
+				4EFE61C51967C31E00022C83 /* LoginViewController.m in Sources */,
 				4E5C722219533AFA002B1488 /* YLCommentsListModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
