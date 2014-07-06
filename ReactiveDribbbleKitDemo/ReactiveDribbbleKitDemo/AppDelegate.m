@@ -10,6 +10,7 @@
 #import "PlayersTableViewController.h"
 #import "ShotsViewController.h"
 #import "LoginViewController.h"
+#import "YLAccountManager.h"
 #import <SDWebImage/SDWebImageManager.h>
 
 @implementation AppDelegate
@@ -23,8 +24,9 @@
     
     LoginViewController* login = [LoginViewController showLoginViewWithFinishHandler:^{
         
-        PlayersTableViewController* playersVC = [[PlayersTableViewController alloc] initWithStyle:UITableViewStylePlain];
-        UINavigationController* navi = [[UINavigationController alloc] initWithRootViewController:playersVC];
+        //PlayersTableViewController* playersVC = [[PlayersTableViewController alloc] initWithStyle:UITableViewStylePlain];
+        ShotsViewController* currentPlayerShotsVC = [ShotsViewController playerShotsViewControllerOfPlayer:[YLAccountManager sharedManager].currentPlayer];
+        UINavigationController* navi = [[UINavigationController alloc] initWithRootViewController:currentPlayerShotsVC];
         
         ShotsViewController* popularShotsVC = [ShotsViewController popularShotsViewController];
         UINavigationController* navi2 = [[UINavigationController alloc] initWithRootViewController:popularShotsVC];

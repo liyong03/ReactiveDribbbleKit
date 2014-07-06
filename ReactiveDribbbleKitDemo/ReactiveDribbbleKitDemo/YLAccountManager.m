@@ -32,6 +32,7 @@ YLAccountManager* _sharedManager = nil;
     else {
         [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"SharedManager"];
     }
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 + (YLAccountManager*)loadManager
