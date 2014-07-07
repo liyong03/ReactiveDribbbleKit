@@ -102,7 +102,7 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath*)indexPath {
     NSLog(@"showed %ld", (long)indexPath.row);
-    NSLog(@"last %lu", self.viewModel.comments.count - 1);
+    NSLog(@"last %u", self.viewModel.comments.count - 1);
     if (indexPath.row == self.viewModel.comments.count - 1) {
         [self.viewModel.loadMoreCommand execute:nil];
     }
