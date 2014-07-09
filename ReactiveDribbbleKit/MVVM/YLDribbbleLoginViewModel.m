@@ -34,13 +34,13 @@
 }
 
 - (RACSignal*)isEnableLogin {
-    return [RACObserve(self, username) map:^id(NSString* name) {
+    return [[RACObserve(self, username) map:^id(NSString* name) {
         if (name.length) {
             return @(YES);
         } else {
             return @(NO);
         }
-    }];
+    }] distinctUntilChanged];
 }
 
 @end
