@@ -19,4 +19,25 @@
              };
 }
 
+
+#pragma mark - MTLManagedObjectSerializing
+
++ (NSString *)managedObjectEntityName {
+    return @"DribbbleShotList";
+}
+
++ (NSDictionary *)managedObjectKeysByPropertyKey {
+    return @{
+             @"page" : [NSNull null],
+             @"pages" : [NSNull null],
+             @"perPage" : [NSNull null],
+             @"total" : [NSNull null],
+             };
+}
+
+
++ (NSDictionary *)relationshipModelClassesByPropertyKey {
+    return @{};
+}
+
 @end

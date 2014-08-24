@@ -56,6 +56,38 @@
     }];
 }
 
+
+#pragma mark - MTLManagedObjectSerializing
+
++ (NSString *)managedObjectEntityName {
+    return @"DribbbleUser";
+}
+
++ (NSDictionary *)managedObjectKeysByPropertyKey {
+    return @{
+             };
+}
+
++ (NSSet *)propertyKeysForManagedObjectUniquing {
+    return [NSSet setWithObject:@"userID"];
+}
+
++ (NSValueTransformer *)urlTransformer {
+    return [MTLValueTransformer reversibleTransformerWithForwardBlock:^NSString *(NSURL *url) {
+        return [url description];
+    } reverseBlock:^NSURL *(NSString *urlString) {
+        return [NSURL URLWithString:urlString];
+    }];
+}
+
++ (NSValueTransformer *)avatarURLEntityAttributeTransformer {
+    return [self urlTransformer];
+}
++ (NSValueTransformer *)websiteURLEntityAttributeTransformer {
+    return [self urlTransformer];
+}
+
+
 @end
 
 @implementation YLDribbbleUserList

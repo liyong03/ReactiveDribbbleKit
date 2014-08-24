@@ -68,6 +68,49 @@
     }];
 }
 
+#pragma mark - MTLManagedObjectSerializing
+
++ (NSString *)managedObjectEntityName {
+    return @"DribbbleShot";
+}
+
++ (NSDictionary *)managedObjectKeysByPropertyKey {
+    return @{
+             @"reboundSourceID" : [NSNull null],
+             };
+}
+
++ (NSSet *)propertyKeysForManagedObjectUniquing {
+    return [NSSet setWithObject:@"shotID"];
+}
+
++ (NSDictionary *)relationshipModelClassesByPropertyKey {
+    return @{
+             @"player" : YLDribbbleUser.class
+             };
+}
+
++ (NSValueTransformer *)urlTransformer {
+    return [MTLValueTransformer reversibleTransformerWithForwardBlock:^NSString *(NSURL *url) {
+        return [url description];
+    } reverseBlock:^NSURL *(NSString *urlString) {
+        return [NSURL URLWithString:urlString];
+    }];
+}
+
++ (NSValueTransformer *)urlEntityAttributeTransformer {
+    return [self urlTransformer];
+}
++ (NSValueTransformer *)shortURLEntityAttributeTransformer {
+    return [self urlTransformer];
+}
++ (NSValueTransformer *)imageURLEntityAttributeTransformer {
+    return [self urlTransformer];
+}
++ (NSValueTransformer *)imageTeaserURLEntityAttributeTransformer {
+    return [self urlTransformer];
+}
+
 @end
 
 @implementation YLDribbbleShotList
@@ -83,5 +126,13 @@
     return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:YLDribbbleShot.class];
 }
 
+#pragma mark - MTLManagedObjectSerializing
+
++ (NSDictionary *)relationshipModelClassesByPropertyKey {
+    NSDictionary* relations = [super relationshipModelClassesByPropertyKey];
+    NSMutableDictionary* result = [NSMutableDictionary dictionaryWithDictionary:relations];
+    [result setObject:YLDribbbleShot.class forKey:@"shots"];
+    return result;
+}
 
 @end

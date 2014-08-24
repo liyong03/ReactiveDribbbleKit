@@ -123,8 +123,10 @@ typedef void (^getCompletionBlock)(id obj);
 {
     NSString* api = @"shots/everyone";
     return [self getPaginationListWithAPI:api page:page andPerpage:listPerPage andClass:YLDribbbleShotList.class successBlock:^(YLDribbbleList *list) {
-        if([list isKindOfClass:YLDribbbleShotList.class])
+        if([list isKindOfClass:YLDribbbleShotList.class]) {
+            list.listName = @"everyone";
             successBlock((YLDribbbleShotList*)list);
+        }
         else {
             NSError* error = [NSError errorWithDomain:@"Engine" code:203 userInfo:nil];
             errorBlock(error);
@@ -136,8 +138,10 @@ typedef void (^getCompletionBlock)(id obj);
 {
     NSString* api = @"shots/popular";
     return [self getPaginationListWithAPI:api page:page andPerpage:listPerPage andClass:YLDribbbleShotList.class successBlock:^(YLDribbbleList *list) {
-        if([list isKindOfClass:YLDribbbleShotList.class])
+        if([list isKindOfClass:YLDribbbleShotList.class]) {
+            list.listName = @"popular";
             successBlock((YLDribbbleShotList*)list);
+        }
         else {
             NSError* error = [NSError errorWithDomain:@"Engine" code:203 userInfo:nil];
             errorBlock(error);
@@ -149,8 +153,10 @@ typedef void (^getCompletionBlock)(id obj);
 {
     NSString* api = @"shots/debuts";
     return [self getPaginationListWithAPI:api page:page andPerpage:listPerPage andClass:YLDribbbleShotList.class successBlock:^(YLDribbbleList *list) {
-        if([list isKindOfClass:YLDribbbleShotList.class])
+        if([list isKindOfClass:YLDribbbleShotList.class]) {
+            list.listName = @"debuts";
             successBlock((YLDribbbleShotList*)list);
+        }
         else {
             NSError* error = [NSError errorWithDomain:@"Engine" code:203 userInfo:nil];
             errorBlock(error);
@@ -160,7 +166,7 @@ typedef void (^getCompletionBlock)(id obj);
 
 + (AFHTTPRequestOperation*)getCommentsOfShot:(NSUInteger)shotID withPage:(NSInteger)page successBlock:(commentListCompletionBlock)successBlock failedBlock:(errorBlock)errorBlock
 {
-    NSString* api = [NSString stringWithFormat:@"shots/%lu/comments", shotID];
+    NSString* api = [NSString stringWithFormat:@"shots/%lu/comments", (unsigned long)shotID];
     return [self getPaginationListWithAPI:api page:page andPerpage:listPerPage andClass:YLDribbbleCommentList.class successBlock:^(YLDribbbleList *list) {
         if([list isKindOfClass:YLDribbbleCommentList.class])
             successBlock((YLDribbbleCommentList*)list);

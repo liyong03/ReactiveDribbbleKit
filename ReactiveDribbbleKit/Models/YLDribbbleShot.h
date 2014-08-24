@@ -10,7 +10,7 @@
 #import <Mantle.h>
 #import "YLDribbbleUser.h"
 
-@interface YLDribbbleShot : MTLModel <MTLJSONSerializing>
+@interface YLDribbbleShot : MTLModel <MTLJSONSerializing, MTLManagedObjectSerializing>
 
 @property (nonatomic, assign) NSUInteger shotID;
 @property (nonatomic, copy) NSString* title;
