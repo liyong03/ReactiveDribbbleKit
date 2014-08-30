@@ -35,6 +35,9 @@
              };
 }
 
++ (NSSet *)propertyKeysForManagedObjectUniquing {
+    return [NSSet setWithObject:@"listName"];
+}
 
 + (NSDictionary *)relationshipModelClassesByPropertyKey {
     return @{};

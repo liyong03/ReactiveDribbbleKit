@@ -21,7 +21,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Expecta (0.3.1)
-  - libwebp (0.4.0):
+  - libwebp (0.4.1):
     - libwebp/dec
     - libwebp/demux
     - libwebp/dsp
@@ -29,13 +29,23 @@ PODS:
     - libwebp/mux
     - libwebp/utils
     - libwebp/webp
-  - libwebp/dec (0.4.0)
-  - libwebp/demux (0.4.0)
-  - libwebp/dsp (0.4.0)
-  - libwebp/enc (0.4.0)
-  - libwebp/mux (0.4.0)
-  - libwebp/utils (0.4.0)
-  - libwebp/webp (0.4.0)
+  - libwebp/dec (0.4.1):
+    - libwebp/enc
+    - libwebp/utils
+  - libwebp/demux (0.4.1):
+    - libwebp/utils
+  - libwebp/dsp (0.4.1):
+    - libwebp/dec
+    - libwebp/enc
+    - libwebp/utils
+  - libwebp/enc (0.4.1):
+    - libwebp/utils
+  - libwebp/mux (0.4.1):
+    - libwebp/utils
+  - libwebp/utils (0.4.1):
+    - libwebp/dsp
+    - libwebp/webp
+  - libwebp/webp (0.4.1)
   - Mantle (1.5):
     - Mantle/extobjc
   - Mantle/extobjc (1.5)
@@ -76,7 +86,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 6d7b76aa5d04c8c37daad3eef4b7e3f2a7620da3
   Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
-  libwebp: 7774a1ee15d19c0f70a992a7e4e4a23f3874a253
+  libwebp: 88e6e172a01df354b0a78400d2e5b87a9f2796cb
   Mantle: c67a7e45e14196ed42b2a7cbb98ff6a9920e6b92
   OCMock: b9836ab89d8d5e66cbe6333f93857037c310ee62
   ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
