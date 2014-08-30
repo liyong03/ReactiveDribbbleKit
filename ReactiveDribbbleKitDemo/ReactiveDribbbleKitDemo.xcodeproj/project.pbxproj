@@ -63,6 +63,11 @@
 		4EFE61C11967BD3100022C83 /* YLDribbbleLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE61BF1967BD3100022C83 /* YLDribbbleLoginViewModel.m */; };
 		4EFE61C41967C31E00022C83 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE61C31967C31E00022C83 /* LoginViewController.m */; };
 		4EFE61C51967C31E00022C83 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE61C31967C31E00022C83 /* LoginViewController.m */; };
+		DF1F29D019B2178D008D37BD /* Dribbble.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF1F29CC19B2178D008D37BD /* Dribbble.xcdatamodeld */; };
+		DF1F29D119B2178D008D37BD /* Dribbble.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF1F29CC19B2178D008D37BD /* Dribbble.xcdatamodeld */; };
+		DF1F29D219B2178D008D37BD /* YLDribbbleCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1F29CF19B2178D008D37BD /* YLDribbbleCoreDataManager.m */; };
+		DF1F29D319B2178D008D37BD /* YLDribbbleCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1F29CF19B2178D008D37BD /* YLDribbbleCoreDataManager.m */; };
+		DF1F29D519B217C8008D37BD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1F29D419B217C8008D37BD /* CoreData.framework */; };
 		F1570C639161406B8F0CBD4D /* libPods-ReactiveDribbbleKitDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF47BF8C9454E9DB2EE6B7B /* libPods-ReactiveDribbbleKitDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -139,6 +144,10 @@
 		8D8BDDDEB47640F99F5520C8 /* Pods-ReactiveDribbbleKitDemo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDribbbleKitDemo.xcconfig"; path = "Pods/Pods-ReactiveDribbbleKitDemo.xcconfig"; sourceTree = "<group>"; };
 		AEF47BF8C9454E9DB2EE6B7B /* libPods-ReactiveDribbbleKitDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveDribbbleKitDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D931E87D44704B83912DA114 /* Pods-ReactiveDribbbleKitDemoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDribbbleKitDemoTests.xcconfig"; path = "Pods/Pods-ReactiveDribbbleKitDemoTests.xcconfig"; sourceTree = "<group>"; };
+		DF1F29CD19B2178D008D37BD /* Dribbble.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dribbble.xcdatamodel; sourceTree = "<group>"; };
+		DF1F29CE19B2178D008D37BD /* YLDribbbleCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLDribbbleCoreDataManager.h; path = CoreData/YLDribbbleCoreDataManager.h; sourceTree = "<group>"; };
+		DF1F29CF19B2178D008D37BD /* YLDribbbleCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLDribbbleCoreDataManager.m; path = CoreData/YLDribbbleCoreDataManager.m; sourceTree = "<group>"; };
+		DF1F29D419B217C8008D37BD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F9418EC241254FBBB643B04D /* libPods-ReactiveDribbbleKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveDribbbleKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -147,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF1F29D519B217C8008D37BD /* CoreData.framework in Frameworks */,
 				4E5C71D6195339D7002B1488 /* CoreGraphics.framework in Frameworks */,
 				4E5C71D8195339D7002B1488 /* UIKit.framework in Frameworks */,
 				4E5C71D4195339D7002B1488 /* Foundation.framework in Frameworks */,
@@ -223,6 +233,7 @@
 		4E5C71D2195339D7002B1488 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF1F29D419B217C8008D37BD /* CoreData.framework */,
 				4E5C71D3195339D7002B1488 /* Foundation.framework */,
 				4E5C71D5195339D7002B1488 /* CoreGraphics.framework */,
 				4E5C71D7195339D7002B1488 /* UIKit.framework */,
@@ -281,6 +292,7 @@
 		4E5C720219533AFA002B1488 /* ReactiveDribbbleKit */ = {
 			isa = PBXGroup;
 			children = (
+				DF1F29CB19B21756008D37BD /* CoreData */,
 				4E5C720319533AFA002B1488 /* API */,
 				4E5C720819533AFA002B1488 /* Models */,
 				4E047808195714A700D99F99 /* MVVM */,
@@ -332,6 +344,16 @@
 				4EDB9261195D4E18007E66E3 /* ShotCell.m */,
 			);
 			name = ViewsAndCells;
+			sourceTree = "<group>";
+		};
+		DF1F29CB19B21756008D37BD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DF1F29CC19B2178D008D37BD /* Dribbble.xcdatamodeld */,
+				DF1F29CE19B2178D008D37BD /* YLDribbbleCoreDataManager.h */,
+				DF1F29CF19B2178D008D37BD /* YLDribbbleCoreDataManager.m */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -505,9 +527,11 @@
 				4E04783019581FF100D99F99 /* PlayersTableViewController.m in Sources */,
 				4E5C71E4195339D7002B1488 /* AppDelegate.m in Sources */,
 				4EDB9262195D4E18007E66E3 /* ShotCell.m in Sources */,
+				DF1F29D219B2178D008D37BD /* YLDribbbleCoreDataManager.m in Sources */,
 				4EFE61C01967BD3100022C83 /* YLDribbbleLoginViewModel.m in Sources */,
 				4E5C722519533AFA002B1488 /* YLDribbbleList.m in Sources */,
 				4E90B2F0195F13A400E59077 /* CommentsViewController.m in Sources */,
+				DF1F29D019B2178D008D37BD /* Dribbble.xcdatamodeld in Sources */,
 				4E5C722D19533AFA002B1488 /* YLPlayerListModel.m in Sources */,
 				4E5C722B19533AFA002B1488 /* YLListModel.m in Sources */,
 				4E5C722119533AFA002B1488 /* YLCommentsListModel.m in Sources */,
@@ -532,6 +556,7 @@
 				4EFE61C11967BD3100022C83 /* YLDribbbleLoginViewModel.m in Sources */,
 				4E5C723019533AFA002B1488 /* YLShotsListModel.m in Sources */,
 				4E90B2F1195F13A400E59077 /* CommentsViewController.m in Sources */,
+				DF1F29D119B2178D008D37BD /* Dribbble.xcdatamodeld in Sources */,
 				4E5C722419533AFA002B1488 /* YLDribbbleComment.m in Sources */,
 				4EA6828B195C720000A0A70B /* YLShotsViewModel.m in Sources */,
 				4EFE61BD1967B61900022C83 /* YLAccountManager.m in Sources */,
@@ -541,6 +566,7 @@
 				4E5C722E19533AFA002B1488 /* YLPlayerListModel.m in Sources */,
 				4EDB9263195D4E18007E66E3 /* ShotCell.m in Sources */,
 				4E5C722619533AFA002B1488 /* YLDribbbleList.m in Sources */,
+				DF1F29D319B2178D008D37BD /* YLDribbbleCoreDataManager.m in Sources */,
 				4E04783119581FF100D99F99 /* PlayersTableViewController.m in Sources */,
 				4E5C722819533AFA002B1488 /* YLDribbbleShot.m in Sources */,
 				4E5C722A19533AFA002B1488 /* YLDribbbleUser.m in Sources */,
@@ -753,6 +779,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF1F29CC19B2178D008D37BD /* Dribbble.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF1F29CD19B2178D008D37BD /* Dribbble.xcdatamodel */,
+			);
+			currentVersion = DF1F29CD19B2178D008D37BD /* Dribbble.xcdatamodel */;
+			name = Dribbble.xcdatamodeld;
+			path = CoreData/Dribbble.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4E5C71C8195339D7002B1488 /* Project object */;
 }
