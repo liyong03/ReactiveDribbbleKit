@@ -11,6 +11,7 @@
 #import "ShotsViewController.h"
 #import "LoginViewController.h"
 #import "YLAccountManager.h"
+#import "YLDribbbleCoreDataManager.h"
 #import <SDWebImage/SDWebImageManager.h>
 
 @implementation AppDelegate
@@ -20,6 +21,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     [SDWebImageManager sharedManager].imageDownloader.maxConcurrentDownloads = 10;
+    [[YLDribbbleCoreDataManager sharedManager] setUp];
     
     
     LoginViewController* login = [LoginViewController showLoginViewWithFinishHandler:^{
@@ -27,10 +29,10 @@
         //PlayersTableViewController* playersVC = [[PlayersTableViewController alloc] initWithStyle:UITableViewStylePlain];
         ShotsViewController* currentPlayerShotsVC = [ShotsViewController playerShotsViewControllerOfPlayer:[YLAccountManager sharedManager].currentPlayer];
         UINavigationController* navi = [[UINavigationController alloc] initWithRootViewController:currentPlayerShotsVC];
-        
+        navi.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemContacts tag:0];
         ShotsViewController* popularShotsVC = [ShotsViewController popularShotsViewController];
         UINavigationController* navi2 = [[UINavigationController alloc] initWithRootViewController:popularShotsVC];
-        
+        navi2.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:1];
         UITabBarController* tabbar = [[UITabBarController alloc] init];
         [tabbar addChildViewController:navi];
         [tabbar addChildViewController:navi2];

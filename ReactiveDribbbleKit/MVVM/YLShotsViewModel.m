@@ -11,6 +11,7 @@
 #import "YLReactiveDribbbleEngine.h"
 #import "YLDribbbleUser.h"
 #import "YLDribbbleShot.h"
+#import "YLReactiveCoreDataManager.h"
 
 @interface YLShotsViewModel()
 
@@ -28,31 +29,37 @@
     return [[YLShotsViewModel alloc] initWithPlayer:player
                                     andGetListBlock:^RACSignal *(NSString *name, NSUInteger page) {
                                         return [YLReactiveDribbbleEngine getFollowingShotsWithUsername:player.userName page:page];
-                                    }];
+                                    }
+                                    andWithSaveList:NO];
 }
 
 + (YLShotsViewModel*)playerShotsViewModelOfPlayer:(YLDribbbleUser*)player {
     return [[YLShotsViewModel alloc] initWithPlayer:player
                                     andGetListBlock:^RACSignal *(NSString *name, NSUInteger page) {
                                         return [YLReactiveDribbbleEngine getPlayerShotsWithUsername:player.userName page:page];
-                                    }];
+                                    }
+                                    andWithSaveList:NO];
 }
 
 + (YLShotsViewModel*)playerLikeShotsViewModelOfPlayer:(YLDribbbleUser*)player {
     return [[YLShotsViewModel alloc] initWithPlayer:player
                                     andGetListBlock:^RACSignal *(NSString *name, NSUInteger page) {
                                         return [YLReactiveDribbbleEngine getLikeShotsWithUsername:player.userName page:page];
-                                    }];
+                                    }
+                                    andWithSaveList:NO];
 }
 
 + (YLShotsViewModel*)popularShotsViewModel {
     return [[YLShotsViewModel alloc] initWithPlayer:nil
                                     andGetListBlock:^RACSignal *(NSString *name, NSUInteger page) {
                                         return [YLReactiveDribbbleEngine getPopularShotsWithPage:page];
-                                    }];
+                                    }
+                                    andWithSaveList:YES];
 }
 
-- (instancetype)initWithPlayer:(YLDribbbleUser*)player andGetListBlock:(RACSignal * (^)(NSString* name, NSUInteger page))fetchBlock
+- (instancetype)initWithPlayer:(YLDribbbleUser*)player
+               andGetListBlock:(RACSignal * (^)(NSString* name, NSUInteger page))fetchBlock
+               andWithSaveList:(BOOL)isSave
 {
     self = [super init];
     if (self) {
@@ -66,13 +73,22 @@
             
             @strongify(self);
             RACSignal *loadPage = [fetchBlock(player.userName, self.page)
-                                   doNext:^(YLDribbbleUserList* userList) {
+                                   doNext:^(YLDribbbleShotList* shotsList) {
                                        @strongify(self);
                                        self.page++;
-                                       if (userList.page == userList.pages) {
+                                       if (shotsList.page == shotsList.pages) {
                                            self.paginationFinished = YES;
                                        } else {
                                            self.paginationFinished = NO;
+                                       }
+                                       
+                                       // save to core data
+                                       if (isSave) {
+                                           [[YLReactiveCoreDataManager saveShotsList:shotsList] subscribeNext:^(id x) {
+                                               NSLog(@"save success!");
+                                           } error:^(NSError *error) {
+                                               NSLog(@"save Error: %@", error);
+                                           }];
                                        }
                                    }];
             
@@ -89,10 +105,10 @@
             
             @strongify(self);
             return [fetchBlock(player.userName, self.page)
-                    doNext:^(YLDribbbleUserList* userList) {
+                    doNext:^(YLDribbbleShotList* shotsList) {
                         @strongify(self);
                         self.page++;
-                        if (userList.page == userList.pages) {
+                        if (shotsList.page == shotsList.pages) {
                             self.paginationFinished = YES;
                         } else {
                             self.paginationFinished = NO;

@@ -68,6 +68,8 @@
 		DF1F29D219B2178D008D37BD /* YLDribbbleCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1F29CF19B2178D008D37BD /* YLDribbbleCoreDataManager.m */; };
 		DF1F29D319B2178D008D37BD /* YLDribbbleCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1F29CF19B2178D008D37BD /* YLDribbbleCoreDataManager.m */; };
 		DF1F29D519B217C8008D37BD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1F29D419B217C8008D37BD /* CoreData.framework */; };
+		DF62373519B3630400725CD9 /* YLReactiveCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF62373419B3630400725CD9 /* YLReactiveCoreDataManager.m */; };
+		DF62373619B3630400725CD9 /* YLReactiveCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF62373419B3630400725CD9 /* YLReactiveCoreDataManager.m */; };
 		F1570C639161406B8F0CBD4D /* libPods-ReactiveDribbbleKitDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF47BF8C9454E9DB2EE6B7B /* libPods-ReactiveDribbbleKitDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -148,6 +150,8 @@
 		DF1F29CE19B2178D008D37BD /* YLDribbbleCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLDribbbleCoreDataManager.h; path = CoreData/YLDribbbleCoreDataManager.h; sourceTree = "<group>"; };
 		DF1F29CF19B2178D008D37BD /* YLDribbbleCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLDribbbleCoreDataManager.m; path = CoreData/YLDribbbleCoreDataManager.m; sourceTree = "<group>"; };
 		DF1F29D419B217C8008D37BD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DF62373319B3630400725CD9 /* YLReactiveCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLReactiveCoreDataManager.h; path = CoreData/YLReactiveCoreDataManager.h; sourceTree = "<group>"; };
+		DF62373419B3630400725CD9 /* YLReactiveCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLReactiveCoreDataManager.m; path = CoreData/YLReactiveCoreDataManager.m; sourceTree = "<group>"; };
 		F9418EC241254FBBB643B04D /* libPods-ReactiveDribbbleKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveDribbbleKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -352,6 +356,8 @@
 				DF1F29CC19B2178D008D37BD /* Dribbble.xcdatamodeld */,
 				DF1F29CE19B2178D008D37BD /* YLDribbbleCoreDataManager.h */,
 				DF1F29CF19B2178D008D37BD /* YLDribbbleCoreDataManager.m */,
+				DF62373319B3630400725CD9 /* YLReactiveCoreDataManager.h */,
+				DF62373419B3630400725CD9 /* YLReactiveCoreDataManager.m */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -519,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF62373519B3630400725CD9 /* YLReactiveCoreDataManager.m in Sources */,
 				4E5C721F19533AFA002B1488 /* MTLJSONAdapter+Array.m in Sources */,
 				4EFE61C41967C31E00022C83 /* LoginViewController.m in Sources */,
 				4E5C722919533AFA002B1488 /* YLDribbbleUser.m in Sources */,
@@ -574,6 +581,7 @@
 				4E90B2ED195EBCD700E59077 /* YLCommentsViewModel.m in Sources */,
 				4E5C722019533AFA002B1488 /* MTLJSONAdapter+Array.m in Sources */,
 				4EFE61C51967C31E00022C83 /* LoginViewController.m in Sources */,
+				DF62373619B3630400725CD9 /* YLReactiveCoreDataManager.m in Sources */,
 				4E5C722219533AFA002B1488 /* YLCommentsListModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
