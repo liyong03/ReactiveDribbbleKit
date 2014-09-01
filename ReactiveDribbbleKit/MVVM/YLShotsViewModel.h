@@ -14,6 +14,7 @@
 @interface YLShotsViewModel : RVMViewModel
 
 @property (nonatomic, copy, readonly) NSArray *shots;
+@property (nonatomic, strong, readonly) RACCommand *loadCacheCommand;
 @property (nonatomic, strong, readonly) RACCommand *reloadCommand;
 @property (nonatomic, strong, readonly) RACCommand *loadMoreCommand;
 @property (nonatomic, readonly, getter = isLoading) BOOL loading;

@@ -112,6 +112,7 @@
         [self.navigationController pushViewController:controller animated:YES];
     }];
     
+    [self.viewModel.loadCacheCommand execute:nil];
     [self.viewModel.reloadCommand execute:nil];
 }
 

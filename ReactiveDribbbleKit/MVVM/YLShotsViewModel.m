@@ -20,6 +20,7 @@
 @property (nonatomic, copy, readwrite) NSArray *shots;
 @property (nonatomic, assign) NSUInteger page;
 @property (nonatomic, assign) BOOL paginationFinished;
+@property (nonatomic, copy) NSString *listName;
 
 @end
 
@@ -50,11 +51,13 @@
 }
 
 + (YLShotsViewModel*)popularShotsViewModel {
-    return [[YLShotsViewModel alloc] initWithPlayer:nil
-                                    andGetListBlock:^RACSignal *(NSString *name, NSUInteger page) {
-                                        return [YLReactiveDribbbleEngine getPopularShotsWithPage:page];
-                                    }
-                                    andWithSaveList:YES];
+    YLShotsViewModel* model = [[YLShotsViewModel alloc] initWithPlayer:nil
+                                                       andGetListBlock:^RACSignal *(NSString *name, NSUInteger page) {
+                                                           return [YLReactiveDribbbleEngine getPopularShotsWithPage:page];
+                                                       }
+                                                       andWithSaveList:YES];
+    model.listName = @"popular";
+    return model;
 }
 
 - (instancetype)initWithPlayer:(YLDribbbleUser*)player
@@ -68,6 +71,16 @@
         _shots = @[];
         
         @weakify(self);
+        
+        _loadCacheCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+            @strongify(self);
+            if (self.listName) {
+                return [YLReactiveCoreDataManager loadShotsListWithName:self.listName];
+            } else {
+                RACSignal* signal = [RACSignal empty];
+                return signal;
+            }
+        }];
         
         _reloadCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
             
@@ -94,7 +107,7 @@
             
             return [loadPage initially:^{
                 @strongify(self);
-                self.shots = @[];
+//                self.shots = @[];
                 self.page = 1;
                 self.paginationFinished = NO;
             }];
@@ -117,6 +130,7 @@
         }];
         
         RACSignal *newResults = [RACSignal merge:@[
+                                                   [_loadCacheCommand.executionSignals concat],
                                                    [_reloadCommand.executionSignals concat],
                                                    [_loadMoreCommand.executionSignals concat],
                                                    ]];

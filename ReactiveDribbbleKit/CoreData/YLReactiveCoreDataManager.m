@@ -31,4 +31,29 @@
     }] publish] autoconnect];
 }
 
++ (RACSignal*)loadShotsListWithName:(NSString*)listName {
+    return [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [[YLDribbbleCoreDataManager sharedManager] performMainContextBlock:^(NSManagedObjectContext *context) {
+            NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"DribbbleShotList"];
+            fetchRequest.predicate = [NSPredicate predicateWithFormat:@"listName==%@", listName];
+            NSError* error;
+            NSArray *cachedLists = [context executeFetchRequest:fetchRequest error:&error];
+            if (!error) {
+                NSManagedObject *mob = cachedLists.firstObject;
+                YLDribbbleShotList *shotList = [MTLManagedObjectAdapter modelOfClass:[YLDribbbleShotList class] fromManagedObject:mob error:&error];
+                if (!error) {
+                    [subscriber sendNext:shotList];
+                    [subscriber sendCompleted];
+                } else {
+                    [subscriber sendError:error];
+                }
+            }
+            else {
+                [subscriber sendError:error];
+            }
+        }];
+        return nil;
+    }] replay];
+}
+
 @end

@@ -14,5 +14,6 @@
 @interface YLReactiveCoreDataManager : NSObject
 
 + (RACSignal*)saveShotsList:(YLDribbbleShotList*)shotsList;
++ (RACSignal*)loadShotsListWithName:(NSString*)listName;
 
 @end
