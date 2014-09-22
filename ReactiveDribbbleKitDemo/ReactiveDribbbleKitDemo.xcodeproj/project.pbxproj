@@ -63,6 +63,7 @@
 		4EFE61C11967BD3100022C83 /* YLDribbbleLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE61BF1967BD3100022C83 /* YLDribbbleLoginViewModel.m */; };
 		4EFE61C41967C31E00022C83 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE61C31967C31E00022C83 /* LoginViewController.m */; };
 		4EFE61C51967C31E00022C83 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE61C31967C31E00022C83 /* LoginViewController.m */; };
+		DF0D563C19D089B1002075DE /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0D563B19D089B1002075DE /* Launch Screen.xib */; };
 		DF1F29D019B2178D008D37BD /* Dribbble.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF1F29CC19B2178D008D37BD /* Dribbble.xcdatamodeld */; };
 		DF1F29D119B2178D008D37BD /* Dribbble.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF1F29CC19B2178D008D37BD /* Dribbble.xcdatamodeld */; };
 		DF1F29D219B2178D008D37BD /* YLDribbbleCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1F29CF19B2178D008D37BD /* YLDribbbleCoreDataManager.m */; };
@@ -146,6 +147,7 @@
 		8D8BDDDEB47640F99F5520C8 /* Pods-ReactiveDribbbleKitDemo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDribbbleKitDemo.xcconfig"; path = "Pods/Pods-ReactiveDribbbleKitDemo.xcconfig"; sourceTree = "<group>"; };
 		AEF47BF8C9454E9DB2EE6B7B /* libPods-ReactiveDribbbleKitDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveDribbbleKitDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D931E87D44704B83912DA114 /* Pods-ReactiveDribbbleKitDemoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDribbbleKitDemoTests.xcconfig"; path = "Pods/Pods-ReactiveDribbbleKitDemoTests.xcconfig"; sourceTree = "<group>"; };
+		DF0D563B19D089B1002075DE /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		DF1F29CD19B2178D008D37BD /* Dribbble.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dribbble.xcdatamodel; sourceTree = "<group>"; };
 		DF1F29CE19B2178D008D37BD /* YLDribbbleCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLDribbbleCoreDataManager.h; path = CoreData/YLDribbbleCoreDataManager.h; sourceTree = "<group>"; };
 		DF1F29CF19B2178D008D37BD /* YLDribbbleCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLDribbbleCoreDataManager.m; path = CoreData/YLDribbbleCoreDataManager.m; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				4E5C71DC195339D7002B1488 /* InfoPlist.strings */,
 				4E5C71DF195339D7002B1488 /* main.m */,
 				4E5C71E1195339D7002B1488 /* ReactiveDribbbleKitDemo-Prefix.pch */,
+				DF0D563B19D089B1002075DE /* Launch Screen.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 			files = (
 				4E5C71DE195339D7002B1488 /* InfoPlist.strings in Resources */,
 				4E5C71E6195339D7002B1488 /* Images.xcassets in Resources */,
+				DF0D563C19D089B1002075DE /* Launch Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -51,11 +51,11 @@
     [SVProgressHUD appearance].hudBackgroundColor = [UIColor blackColor];
     [SVProgressHUD appearance].hudForegroundColor = [UIColor whiteColor];
     
-    self.userNameField = [[UITextField alloc] initWithFrame:CGRectMake(20, 100, 280, 40)];
+    self.userNameField = [[UITextField alloc] initWithFrame:CGRectMake(20, 100, self.view.frame.size.width - 40, 40)];
     [self.view addSubview:self.userNameField];
     self.userNameField.placeholder = @"Dribbble username";
     
-    self.signin = [[UIButton alloc] initWithFrame:CGRectMake(20, 180, 280, 30)];
+    self.signin = [[UIButton alloc] initWithFrame:CGRectMake(20, 180, self.view.frame.size.width - 40, 30)];
     [self.view addSubview:self.signin];
     [self.signin setTitle:@"SignIn" forState:UIControlStateNormal];
     [self.signin setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
